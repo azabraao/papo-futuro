@@ -61,6 +61,24 @@ const GlobalStyles = createGlobalStyle`
   	width: 100%;
   	height: auto;
   }
+
+  .color-white {color:var(--white)}
+  .color-black {color:var(--black)}
+  .color-black-transparent {color:var(--black-transparent)}
+  .color-dark {color:var(--dark)}
+  .color-primary {color:var(--primary)}
+  .color-primary-lighter {color:var(--primary-lighter)}
+  .color-primary-opaque {color:var(--primary-opaque)}
+  .color-primary-dark {color:var(--primary-dark)}
+  .color-primary-darker {color:var(--primary-darker)}
+  .color-primary-gradient {color:var(--primary-gradient)}
+  .color-warning {color:var(--warning)}
+  .color-warning-dark {color:var(--warning-dark)}
+  .color-warning-light {color:var(--warning-light)}
+  .color-warning-gradient {color:var(--warning-gradient)}
+  .color-danger {color:var(--danger)}
+  .color-danger-dark {color:var(--danger-dark)}
+
   :root {
     --white: #fff;
     --black: #222;

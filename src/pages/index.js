@@ -1,4 +1,5 @@
 import React from "react"
+import ContentSection1 from "../components/ContentSection1"
 import Navbar from "../components/Navbar"
 import SEO from "../components/SEO"
 import SiteHeader from "../components/SiteHeader"
@@ -12,6 +13,7 @@ export default function Home() {
       <SiteHeader>
         <Navbar />
       </SiteHeader>
+      <ContentSection1 />
     </div>
   )
 }
