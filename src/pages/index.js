@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "../components/Navbar"
 import SEO from "../components/SEO"
+import SiteHeader from "../components/SiteHeader"
 import GlobalStyles from "../styles/global"
 
 export default function Home() {
@@ -8,7 +9,9 @@ export default function Home() {
     <div>
       <GlobalStyles />
       <SEO />
-      <Navbar />
+      <SiteHeader>
+        <Navbar />
+      </SiteHeader>
     </div>
   )
 }

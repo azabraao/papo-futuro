@@ -170,6 +170,7 @@ export const NavbarWrapper = styled.nav`
   }
 
   ${media.greaterThan("large")`
+      background: var(--white);
 
       .Navbar__inside {
         align-items: center;
@@ -206,11 +207,15 @@ export const NavbarWrapper = styled.nav`
               display: inline-block;
 
               .Navbar__menu-link-anchor {
+                color: var(--primary);
                 text-decoration: none;
                 font-style: normal;
                 font-size: 16px;
                 line-height: 19px;
                 letter-spacing: 0.05em;
+              }
+              .Navbar__menu-link-anchor--btn {
+                color: var(--white)
               }
             }
           }
