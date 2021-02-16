@@ -1,20 +1,36 @@
-import React, { memo } from "react"
+import React, { useState, memo } from "react"
+import Logo from "../Logo"
 import * as S from "./styled"
+import Container from "../Container"
+import classNames from "classnames"
 
 const Navbar = () => {
+  const [menuIsActive, setMenuIsActive] = useState(false)
+
   return (
     <S.NavbarWrapper className="Navbar">
-      <div className="container">
+      <Container>
         <div className="Navbar__inside">
-          <div className="Navbar__logo">logo</div>
-          <div className="Navbar__hamburguer">
+          <div className="Navbar__logo">
+            <Logo />
+          </div>
+          <div
+            className={classNames("Navbar__hamburguer", {
+              active: menuIsActive,
+            })}
+            onClick={() => setMenuIsActive(!menuIsActive)}
+          >
             <span className="Navbar__hamburguer-line"></span>
           </div>
-          <div className="Navbar__menu">
+          <div
+            className={classNames("Navbar__menu", {
+              active: menuIsActive,
+            })}
+          >
             <ul className="Navbar__menu-links">
               <li className="Navbar__menu-link">
                 <a className="Navbar__menu-link-anchor" href="#">
-                  O projeto
+                  o projeto
                 </a>
               </li>
               <li className="Navbar__menu-link">
@@ -53,14 +69,14 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Button" href="#">
+                <a className="Navbar__menu-link-anchor Navbar__menu-link-anchor--btn" href="#">
                   doe agora
                 </a>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </Container>
     </S.NavbarWrapper>
   )
 }

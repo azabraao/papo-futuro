@@ -64,6 +64,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --white: #fff;
     --black: #222;
+    --black-transparent: rgb(34 34 34 / 79%);
     --dark: #818181;
     --primary: #33a0ff;
     --primary-lighter: #26fff1;

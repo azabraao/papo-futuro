@@ -2,16 +2,12 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const NavbarWrapper = styled.nav`
-  padding-bottom: 20px;
-  position: relative;
-  z-index: 1;
-  padding-top: 58px;
-  padding-left: 25px;
+  padding: 30px 0;
 
   .Navbar__inside {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     .Navbar__logo {
     }
@@ -22,7 +18,7 @@ export const NavbarWrapper = styled.nav`
       }
       .Navbar__hamburguer-line:after {
         transform: rotate(135deg);
-        top: -2px;
+        top: -4px;
       }
       .Navbar__hamburguer-line {
         transition: 0.3s;
@@ -41,32 +37,29 @@ export const NavbarWrapper = styled.nav`
       .Navbar__hamburguer-line:after {
         content: "";
         position: relative;
-        height: 2px;
-        width: 36px;
         background: var(--white);
         width: 36px;
-        height: 2px;
-        border-radius: 5px;
+        height: 4px;
+        border-radius: 0px;
         position: relative;
         display: block;
         transition: 0.3s;
       }
 
       .Navbar__hamburguer-line:before {
-        bottom: 7.5px;
+        bottom: 10.5px;
       }
 
       .Navbar__hamburguer-line:after {
-        top: 5px;
+        top: 8px;
       }
 
       .Navbar__hamburguer-line {
         background: var(--white);
         width: 36px;
-        height: 2px;
-        border-radius: 5px;
         position: relative;
         transition: 0.3s;
+        height: 4px;
       }
       img {
       }
@@ -77,7 +70,7 @@ export const NavbarWrapper = styled.nav`
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(240, 248, 255, 0.95);
+      background: var(--black-transparent);
       padding: 32px;
       opacity: 0;
       pointer-events: none;
@@ -115,21 +108,40 @@ export const NavbarWrapper = styled.nav`
           right: -140px;
         }
 
+        .Navbar__menu-link:nth-child(7) {
+          right: -160px;
+        }
+
+        .Navbar__menu-link:nth-child(8) {
+          right: -180px;
+        }
+
+        .Navbar__menu-link:nth-child(9) {
+          right: -200px;
+        }
+
         .Navbar__menu-link {
           text-align: right;
-          margin-bottom: 20px;
+          margin-bottom: 32px;
           position: relative;
           right: -50px;
           transition: all 1s;
 
-          .Navbar__menu-link-anchor {
+          .Navbar__menu-link-anchor,
+          .Navbar__menu-link-anchor--btn {
             text-decoration: none;
             font-style: normal;
-            font-weight: bold;
-            font-size: 16px;
+            font-size: 0.8rem;
             line-height: 19px;
             letter-spacing: 0.05em;
-            text-transform: uppercase;
+            color: var(--white);
+          }
+
+          .Navbar__menu-link-anchor--btn {
+            background: var(--warning);
+            padding: 2px 10px;
+            border-radius: 16px;
+            font-weight: 700;
           }
         }
       }
@@ -137,7 +149,7 @@ export const NavbarWrapper = styled.nav`
       ${media.greaterThan("medium")`
           .Navbar__menu-links {
             padding: 80px 2rem 0 2rem;
-            width: 36rem;
+            width: 91%;
             margin: 0 auto;
           }
         `}
@@ -159,17 +171,11 @@ export const NavbarWrapper = styled.nav`
 
   ${media.greaterThan("large")`
 
-      padding-top: 80px;
-      padding-left: 0;
-
       .Navbar__inside {
         align-items: center;
 
         .Navbar__logo {
-          strong {
-            font-size: 24px;
-            line-height: 28px;
-          }
+         
         }
         .Navbar__hamburguer.active {
           display: none;
@@ -188,10 +194,9 @@ export const NavbarWrapper = styled.nav`
           .Navbar__menu-links {
             padding: 0;
             width: auto;
-            width: 803px;
+            width: 900px;
             display: flex;
             justify-content: space-between;
-            padding-bottom: 6px;
 
             .Navbar__menu-link {
               text-align: center;
@@ -203,11 +208,9 @@ export const NavbarWrapper = styled.nav`
               .Navbar__menu-link-anchor {
                 text-decoration: none;
                 font-style: normal;
-                font-weight: bold;
                 font-size: 16px;
                 line-height: 19px;
                 letter-spacing: 0.05em;
-                text-transform: uppercase;
               }
             }
           }
