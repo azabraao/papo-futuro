@@ -4,7 +4,7 @@ import SideImage from "./SideImage"
 import * as S from "./styled"
 
 const ContentSection1 = () => {
-  const shouldRenderImage = window.innerWidth >= 1170
+  const shouldRenderImage = window && window.innerWidth >= 1170
 
   return (
     <S.ContentSection1Wrapper>
