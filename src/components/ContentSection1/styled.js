@@ -11,7 +11,6 @@ export const ContentSection1Wrapper = styled.section`
 
     h2 {
       position: relative;
-
       font-size: 22px;
       font-weight: 700;
       margin-bottom: 16px;

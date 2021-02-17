@@ -2,6 +2,7 @@ import React from "react"
 import ContentSection1 from "../components/ContentSection1"
 import ManifestSection from "../components/ManifestSection"
 import Navbar from "../components/Navbar"
+import PublicSchoolSection from "../components/PublicSchoolSection"
 import SEO from "../components/SEO"
 import SiteHeader from "../components/SiteHeader"
 import GlobalStyles from "../styles/global"
@@ -16,6 +17,7 @@ export default function Home() {
       </SiteHeader>
       <ContentSection1 />
       <ManifestSection />
+      <PublicSchoolSection />
     </div>
   )
 }

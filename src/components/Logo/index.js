@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import * as S from "./styled"
@@ -38,4 +38,4 @@ const Logo = () => {
   return <S.LogoWrapper fluid={sources} />
 }
 
-export default Logo
+export default memo(Logo)
