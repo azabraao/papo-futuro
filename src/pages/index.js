@@ -1,5 +1,6 @@
 import React from "react"
 import ContentSection1 from "../components/ContentSection1"
+import ManifestSection from "../components/ManifestSection"
 import Navbar from "../components/Navbar"
 import SEO from "../components/SEO"
 import SiteHeader from "../components/SiteHeader"
@@ -14,6 +15,7 @@ export default function Home() {
         <Navbar />
       </SiteHeader>
       <ContentSection1 />
+      <ManifestSection />
     </div>
   )
 }
