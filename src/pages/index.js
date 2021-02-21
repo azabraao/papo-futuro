@@ -1,5 +1,6 @@
 import React from "react"
 import ContentSection1 from "../components/ContentSection1"
+import HowMuchCosts from "../components/HowMuchCosts"
 import ManifestSection from "../components/ManifestSection"
 import Navbar from "../components/Navbar"
 import PublicSchoolSection from "../components/PublicSchoolSection"
@@ -18,6 +19,7 @@ export default function Home() {
       <ContentSection1 />
       <ManifestSection />
       <PublicSchoolSection />
+      <HowMuchCosts/>
     </div>
   )
 }
