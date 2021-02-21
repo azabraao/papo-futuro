@@ -1,5 +1,6 @@
 import React from "react"
 import ContentSection1 from "../components/ContentSection1"
+import DonateNow from "../components/DonateNow"
 import HowMuchCosts from "../components/HowMuchCosts"
 import ManifestSection from "../components/ManifestSection"
 import Navbar from "../components/Navbar"
@@ -20,6 +21,7 @@ export default function Home() {
       <ManifestSection />
       <PublicSchoolSection />
       <HowMuchCosts/>
+      <DonateNow/>  
     </div>
   )
 }
