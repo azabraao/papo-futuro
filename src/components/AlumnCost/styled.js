@@ -51,7 +51,6 @@ export const AlumnCostWrapper = styled.div`
         flex-direction: row;
         width: 80%;
         justify-content:flex-start;
-        border-radius: 16px;
         padding: 32px;
         font-size: 24px;line-height: 1.2;
       `}
