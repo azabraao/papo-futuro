@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar"
 import PublicSchoolSection from "../components/PublicSchoolSection"
 import SEO from "../components/SEO"
 import SiteHeader from "../components/SiteHeader"
+import SponsorshipSystem from "../components/SponsorshipSystem"
 import GlobalStyles from "../styles/global"
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <HowMuchCosts />
       <DonateNow />
       <AlumnCost />
+      <SponsorshipSystem />
     </div>
   )
 }
