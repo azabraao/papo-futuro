@@ -1,4 +1,5 @@
 import React from "react"
+import AlumnCost from "../components/AlumnCost"
 import ContentSection1 from "../components/ContentSection1"
 import DonateNow from "../components/DonateNow"
 import HowMuchCosts from "../components/HowMuchCosts"
@@ -20,8 +21,9 @@ export default function Home() {
       <ContentSection1 />
       <ManifestSection />
       <PublicSchoolSection />
-      <HowMuchCosts/>
-      <DonateNow/>  
+      <HowMuchCosts />
+      <DonateNow />
+      <AlumnCost />
     </div>
   )
 }
