@@ -2,6 +2,7 @@ import React from "react"
 import AlumnCost from "../components/AlumnCost"
 import ContentSection1 from "../components/ContentSection1"
 import DonateNow from "../components/DonateNow"
+import HowItWorks from "../components/HowItWorks"
 import HowMuchCosts from "../components/HowMuchCosts"
 import ManifestSection from "../components/ManifestSection"
 import Navbar from "../components/Navbar"
@@ -26,6 +27,7 @@ export default function Home() {
       <DonateNow />
       <AlumnCost />
       <SponsorshipSystem />
+      <HowItWorks/>
     </div>
   )
 }
