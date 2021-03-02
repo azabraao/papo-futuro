@@ -8,6 +8,7 @@ export const TitleWrapper = styled.h2`
   margin-bottom: 16px;
   color: var(--${props => props.titleColor});
   text-align: center;
+  margin-bottom: 40px;
 
   &::before {
     content: "";
@@ -18,9 +19,9 @@ export const TitleWrapper = styled.h2`
     height: 6px;
     width: 40px;
     border-radius: 8px;
-    margin: ${props => (props.centeredOnMobile && "0 auto")};
-    left: ${props => (props.centeredOnMobile && "0")};
-    right: ${props => (props.centeredOnMobile && "0")};
+    margin: ${props => props.centeredOnMobile && "0 auto"};
+    left: ${props => props.centeredOnMobile && "0"};
+    right: ${props => props.centeredOnMobile && "0"};
 
     ${media.greaterThan("large")`
       left: 0;
