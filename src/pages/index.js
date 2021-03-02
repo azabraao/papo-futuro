@@ -13,6 +13,7 @@ import SponsorshipSystem from "../components/SponsorshipSystem"
 import Testimonials from "../components/Testimonials"
 import GlobalStyles from "../styles/global"
 import HelpedStudents from "../components/HelpedStudents"
+import Achievements from "../components/Achievements"
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <HowItWorks />
       <Testimonials />
       <HelpedStudents />
+      <Achievements />
     </div>
   )
 }
