@@ -12,6 +12,7 @@ import SiteHeader from "../components/SiteHeader"
 import SponsorshipSystem from "../components/SponsorshipSystem"
 import Testimonials from "../components/Testimonials"
 import GlobalStyles from "../styles/global"
+import HelpedStudents from "../components/HelpedStudents"
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <SponsorshipSystem />
       <HowItWorks />
       <Testimonials />
+      <HelpedStudents />
     </div>
   )
 }
