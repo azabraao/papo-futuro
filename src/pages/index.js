@@ -1,5 +1,5 @@
 import React from "react"
-import AlumnCost from "../components/AlumnCost"
+import StudentCost from "../components/StudentCost"
 import ContentSection1 from "../components/ContentSection1"
 import DonateNow from "../components/DonateNow"
 import HowItWorks from "../components/HowItWorks"
@@ -26,7 +26,7 @@ export default function Home() {
       <PublicSchoolSection />
       <HowMuchCosts />
       <DonateNow />
-      <AlumnCost />
+      <StudentCost />
       <SponsorshipSystem />
       <HowItWorks />
       <Testimonials />

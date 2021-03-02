@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import * as S from "./styled"
 
-const AlumnCost = () => {
+const StudentCost = () => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -23,14 +23,14 @@ const AlumnCost = () => {
   const custoMedioAlunoImg = data.custoMedioAlunoImg.childImageSharp.fluid
 
   return (
-    <S.AlumnCostWrapper className="AlumnCost">
-      <picture className="AlumnCost__img">
-        <div className="AlumnCost__img-wrap">
+    <S.StudentCostWrapper className="StudentCost">
+      <picture className="StudentCost__img">
+        <div className="StudentCost__img-wrap">
         <Img fluid={custoMedioAlunoImg} />
           </div> 
       </picture>
-      <div className="AlumnCost__content">
-        <div className="AlumnCost__content-box AlumnCost__content-box-1">
+      <div className="StudentCost__content">
+        <div className="StudentCost__content-box StudentCost__content-box-1">
           <article className="color-primary">
             <p>
               Doando <span className="color-warning">R$123,00</span> você ajuda
@@ -41,7 +41,7 @@ const AlumnCost = () => {
             <small>alunos</small>
           </div>
         </div>
-        <div className="AlumnCost__content-box AlumnCost__content-box-2">
+        <div className="StudentCost__content-box StudentCost__content-box-2">
           <article className="color-warning">
             <p>
               Doando <span className="color-primary">R$321,00</span> você ajuda
@@ -53,8 +53,8 @@ const AlumnCost = () => {
           </div>
         </div>
       </div>
-    </S.AlumnCostWrapper>
+    </S.StudentCostWrapper>
   )
 }
 
-export default memo(AlumnCost)
+export default memo(StudentCost)
