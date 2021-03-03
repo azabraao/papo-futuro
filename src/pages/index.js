@@ -15,6 +15,7 @@ import GlobalStyles from "../styles/global"
 import HelpedStudents from "../components/HelpedStudents"
 import Achievements from "../components/Achievements"
 import PapoNaMidia from "../components/PapoNaMidia"
+import Supporters from "../components/Supporters"
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <HelpedStudents />
       <Achievements />
       <PapoNaMidia />
+      <Supporters />
     </div>
   )
 }
