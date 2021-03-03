@@ -12,24 +12,17 @@ const Slide = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        adilsonRodrigues: file(relativePath: { eq: "adilson-rodrigues.png" }) {
+        apagao: file(relativePath: { eq: "apagao.png" }) {
           childImageSharp {
-            fixed(width: 200, height: 200, quality: 70) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 320, quality: 70) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
-        daniel: file(relativePath: { eq: "daniel.png" }) {
+        gerazaoz: file(relativePath: { eq: "gerazao-z.png" }) {
           childImageSharp {
-            fixed(width: 200, height: 200, quality: 70) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        andressa: file(relativePath: { eq: "andressa.png" }) {
-          childImageSharp {
-            fixed(width: 200, height: 200, quality: 70) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 320, quality: 70) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -39,14 +32,13 @@ const Slide = () => {
 
   const onArrowClick = direction => setSlideDirection(direction)
 
-  const adilsonRodrigues = data.adilsonRodrigues.childImageSharp.fixed
-  const daniel = data.daniel.childImageSharp.fixed
-  const andressa = data.andressa.childImageSharp.fixed
+  const apagao = data.apagao.childImageSharp.fluid
+  const gerazaoz = data.gerazaoz.childImageSharp.fluid
 
   const settings = {
     className: "center",
     dots: false,
-    infinite: true,
+    infinite: false,
     lazyLoad: true,
     centerMode: true,
     speed: 500,
@@ -64,6 +56,7 @@ const Slide = () => {
       {
         breakpoint: 768,
         settings: {
+          infinite: true,
           slidesToShow: 1,
         },
       },
@@ -73,22 +66,19 @@ const Slide = () => {
   return (
     <Slider {...settings}>
       <Card
-        image={adilsonRodrigues}
-        name="Adilson Rodrigues"
-        title="20 anos, Curso Popular Mafalda"
-        description="O empenho do Projeto Papo Futuro está contribuindo muito no meu sonho de ser o primeiro da minha família conseguir entrar na Universidade pública com os equipamentos doados."
+        image={apagao}
+        preTitle="19 de agosto de 2020 - Estadão"
+        title="Apagão educacional e inclusão digital: ação solidária contra 
+        a desigualdade"
+        description="As fragilidades que persistem nas iniciativas de universalização das políticas públicas e no Brasil criam uma maior dificuldade no enfrentamento da pandemia. O caso da Educação, determinante para o desenvolvimento de nosso país, não é diferente. (…)"
+        link="https://politica.estadao.com.br/blogs/gestao-politica-e-sociedade/apagao-educacional-e-inclusao-digital-acao-solidaria-contra-a-desigualdade/"
       />
       <Card
-        image={daniel}
-        name="Daniel"
-        title="21 anos, Cursinho Popular Quantum"
-        description="Acredito que o Papo Futuro não é apenas uma ajuda e sim uma ponte entre mim e realização dos meus sonhos."
-      />
-      <Card
-        image={andressa}
-        name="Andressa"
-        title="19 anos, Cursinho Vitto Giannotti"
-        description="O projeto papo futuro me doou um notebook em ótimas condições para que eu possa dar continuidade aos estudos em casa. Agradeço imensamente aos idealizadores do projeto, não sei se conseguiria continuar a estudar sem recursos."
+        image={gerazaoz}
+        preTitle="07 de agosto de 2020 - Glamurama"
+        title="Geração Z: Desculpa professor, a internet caiu aqui! As dificuldades do ensino à distância"
+        description="Depois de um mês de férias viajando do meu quarto para a cozinha, do banheiro para a sala, e do escritório até a lavanderia, minhas aulas voltaram. Não vou poder mais tomar sol de manhã, jogar videogame a tarde, passar horas no celular à noite e dormir às 4 da manhã depois de ver três filmes de madrugada.(…)"
+        link="https://glamurama.uol.com.br/geracao-z-desculpa-professor-a-internet-caiu-aqui-as-dificuldades-do-ensino-a-distancia/"
       />
     </Slider>
   )
