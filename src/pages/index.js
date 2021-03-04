@@ -18,6 +18,7 @@ import PapoNaMidia from "../components/PapoNaMidia"
 import Supporters from "../components/Supporters"
 import Makers from "../components/Makers"
 import Contato from "../components/Contato"
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       <Supporters />
       <Makers />
       <Contato />
+      <Footer />
     </div>
   )
 }
