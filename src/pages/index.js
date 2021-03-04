@@ -16,6 +16,7 @@ import HelpedStudents from "../components/HelpedStudents"
 import Achievements from "../components/Achievements"
 import PapoNaMidia from "../components/PapoNaMidia"
 import Supporters from "../components/Supporters"
+import Makers from "../components/Makers"
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       <Achievements />
       <PapoNaMidia />
       <Supporters />
+      <Makers />
     </div>
   )
 }
