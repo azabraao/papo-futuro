@@ -1,8 +1,8 @@
 import React, { memo } from "react"
 import { SectionWrapper } from "./styled"
 
-const Section = ({ children, background }) => {
-  return <SectionWrapper background={background}>{children}</SectionWrapper>
+const Section = ({ children, ...rest }) => {
+  return <SectionWrapper {...rest}>{children}</SectionWrapper>
 }
 
 export default memo(Section)

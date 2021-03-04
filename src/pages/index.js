@@ -17,6 +17,7 @@ import Achievements from "../components/Achievements"
 import PapoNaMidia from "../components/PapoNaMidia"
 import Supporters from "../components/Supporters"
 import Makers from "../components/Makers"
+import Contato from "../components/Contato"
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
       <PapoNaMidia />
       <Supporters />
       <Makers />
+      <Contato />
     </div>
   )
 }
