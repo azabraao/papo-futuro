@@ -29,6 +29,8 @@ const Contato = React.lazy(() => import("../components/Contato"))
 const Footer = React.lazy(() => import("../components/Footer"))
 
 export default function Home() {
+  const isSSR = typeof window === "undefined"
+
   return (
     <div>
       <GlobalStyles />
@@ -36,24 +38,26 @@ export default function Home() {
       <SiteHeader>
         <Navbar />
       </SiteHeader>
-      <Suspense fallback={<div>loading....</div>}>
-        <ContentSection1 />
-        <ManifestSection />
-        <PublicSchoolSection />
-        <HowMuchCosts />
-        <DonateNow />
-        <StudentCost />
-        <SponsorshipSystem />
-        <HowItWorks />
-        <Testimonials />
-        <HelpedStudents />
-        <Achievements />
-        <PapoNaMidia />
-        <Supporters />
-        <Makers />
-        <Contato />
-        <Footer />
-      </Suspense>
+      {!isSSR && (
+        <Suspense fallback={<div>loading....</div>}>
+          <ContentSection1 />
+          <ManifestSection />
+          <PublicSchoolSection />
+          <HowMuchCosts />
+          <DonateNow />
+          <StudentCost />
+          <SponsorshipSystem />
+          <HowItWorks />
+          <Testimonials />
+          <HelpedStudents />
+          <Achievements />
+          <PapoNaMidia />
+          <Supporters />
+          <Makers />
+          <Contato />
+          <Footer />
+        </Suspense>
+      )}
     </div>
   )
 }
