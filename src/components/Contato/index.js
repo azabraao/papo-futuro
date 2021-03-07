@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from "react"
+import React, { memo } from "react"
 import { ContatoWrapper } from "./styled"
 import Section from "../Section"
 import Title from "../Title"
@@ -8,12 +8,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 const Contato = () => {
-  const [isDesktop, setIsDesktop] = useState(false)
-
-  useEffect(() => {
-    setIsDesktop(window.innerWidth >= 1170)
-  }, [])
-
   const data = useStaticQuery(
     graphql`
       query {
@@ -31,7 +25,7 @@ const Contato = () => {
   const imageData = data.image.childImageSharp.fluid
 
   return (
-    <Section noPaddingBottom={true} id="contato">
+    <Section noPaddingBottom={true} id="contato" background="gray-lighter">
       <ContatoWrapper>
         <Container>
           <Title
@@ -82,10 +76,7 @@ const Contato = () => {
               href="https://docs.google.com/forms/d/1S5UoGoReGxUbH6qpH6CesPSjqoPWOpp80NW6T3A5XyI/closedform"
               className="Contato__link sou-aluno"
             >
-              <p>
-                Sou aluno ou conheço um aluno
-                {isDesktop && "que precisa de ajuda"}
-              </p>
+              <p>Sou aluno ou conheço um aluno que precisa de ajuda</p>
             </a>
           </div>
         </Container>

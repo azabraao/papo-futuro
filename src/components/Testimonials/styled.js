@@ -2,11 +2,10 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const TestimonialsWrapper = styled.div`
-
   .slick-slide {
     opacity: 0.5;
 
-    ${media.greaterThan("large")`
+    ${media.greaterThan("medium")`
       opacity: 1;
     `}
   }
@@ -28,13 +27,24 @@ export const CardWrapper = styled.div`
   }
 
   .Card__name {
-    font-weight: bold;
-    color: var(--danger);
+    h3 {
+      color: var(--danger);
+      font-weight: bold;
+      margin-bottom: 0;
+    }
   }
 
   .Card__title {
-    color: var(--danger);
-    margin-bottom: 16px;
+    h3 {
+      color: var(--danger);
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 4px;
+
+    ${media.greaterThan("large")`
+      margin-bottom: 16px;
+    `}
   }
 
   .Card__description {

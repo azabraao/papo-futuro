@@ -2,15 +2,18 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const PublicSchoolSectionWrapper = styled.section`
-  padding: 80px 0;
+  padding: 40px 0;
 
-  h1 {
-    font-size: 22px;
+  h2 {
     font-weight: 700;
     margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 1.3;
+    max-width: 800px;
 
     ${media.greaterThan("large")`
         font-size: 30px;
+        margin-bottom:32px;
      `}
   }
 
@@ -19,7 +22,8 @@ export const PublicSchoolSectionWrapper = styled.section`
 
     ${media.greaterThan("large")`
       display: flex;
-      justify-content: space-between
+      justify-content: space-between;
+      margin-bottom: 16px;
      `}
 
     p {
@@ -66,7 +70,7 @@ export const PublicSchoolSectionWrapper = styled.section`
       margin-bottom: 16px;
     }
     .PublicSchoolSection__button-2 {
-      background-color: var(--danger);
+      background-color: var(--warning);
       color: var(--white);
     }
     .PublicSchoolSection__button-1-wrap,

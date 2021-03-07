@@ -19,7 +19,7 @@ const PapoNaMidia = () => {
           <Title
             lineColor="danger-dark"
             centeredOnMobile={true}
-            titleColor="danger"
+            titleColor="warning"
           >
             papo na mídia
           </Title>

@@ -7,21 +7,22 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const Slide = () => {
-  const [slideDirection, setSlideDirection] = useState("")
+  const [slideDirection, setSlideDirection] = useState("right")
+  const [currentSlide, setCurrentSlide] = useState(0)
 
   const data = useStaticQuery(
     graphql`
       query {
         apagao: file(relativePath: { eq: "apagao.png" }) {
           childImageSharp {
-            fluid(maxWidth: 320, quality: 70) {
+            fluid(maxWidth: 400, quality: 70) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         gerazaoz: file(relativePath: { eq: "gerazao-z.png" }) {
           childImageSharp {
-            fluid(maxWidth: 320, quality: 70) {
+            fluid(maxWidth: 400, quality: 70) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -43,20 +44,28 @@ const Slide = () => {
     centerMode: true,
     speed: 500,
     swipeToSlide: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
+    afterChange: current => setCurrentSlide(current),
     nextArrow: (
-      <NextArrow onArrowClick={onArrowClick} slideDirection={slideDirection} />
+      <NextArrow
+        currentSlide={currentSlide}
+        onArrowClick={onArrowClick}
+        slideDirection={slideDirection}
+      />
     ),
     prevArrow: (
-      <PrevArrow onArrowClick={onArrowClick} slideDirection={slideDirection} />
+      <PrevArrow
+        currentSlide={currentSlide}
+        onArrowClick={onArrowClick}
+        slideDirection={slideDirection}
+      />
     ),
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          infinite: true,
           slidesToShow: 1,
         },
       },
@@ -68,7 +77,7 @@ const Slide = () => {
       <Card
         image={apagao}
         preTitle="19 de agosto de 2020 - Estadão"
-        title="Apagão educacional e inclusão digital: ação solidária contra 
+        title="apagão educacional e inclusão digital: ação solidária contra 
         a desigualdade"
         description="As fragilidades que persistem nas iniciativas de universalização das políticas públicas e no Brasil criam uma maior dificuldade no enfrentamento da pandemia. O caso da Educação, determinante para o desenvolvimento de nosso país, não é diferente. (…)"
         link="https://politica.estadao.com.br/blogs/gestao-politica-e-sociedade/apagao-educacional-e-inclusao-digital-acao-solidaria-contra-a-desigualdade/"
@@ -76,7 +85,7 @@ const Slide = () => {
       <Card
         image={gerazaoz}
         preTitle="07 de agosto de 2020 - Glamurama"
-        title="Geração Z: Desculpa professor, a internet caiu aqui! As dificuldades do ensino à distância"
+        title="geração z: Desculpa professor, a internet caiu aqui! As dificuldades do ensino à distância"
         description="Depois de um mês de férias viajando do meu quarto para a cozinha, do banheiro para a sala, e do escritório até a lavanderia, minhas aulas voltaram. Não vou poder mais tomar sol de manhã, jogar videogame a tarde, passar horas no celular à noite e dormir às 4 da manhã depois de ver três filmes de madrugada.(…)"
         link="https://glamurama.uol.com.br/geracao-z-desculpa-professor-a-internet-caiu-aqui-as-dificuldades-do-ensino-a-distancia/"
       />
@@ -84,14 +93,16 @@ const Slide = () => {
   )
 }
 
-const PrevArrow = ({ onClick, onArrowClick, slideDirection }) => {
+const PrevArrow = ({ onClick, onArrowClick, slideDirection, currentSlide }) => {
+  if (currentSlide === 0) return null
+
   return (
     <SlideArrow
       isLeft={true}
       active={slideDirection === "left"}
       onClick={e => {
         onArrowClick("left")
-        onClick(e)
+        onClick && onClick(e)
       }}
     >
       <svg
@@ -108,13 +119,15 @@ const PrevArrow = ({ onClick, onArrowClick, slideDirection }) => {
   )
 }
 
-const NextArrow = ({ onClick, onArrowClick, slideDirection }) => {
+const NextArrow = ({ onClick, onArrowClick, slideDirection, currentSlide }) => {
+  if (currentSlide > 0) return null
+
   return (
     <SlideArrow
       isLeft={false}
       onClick={e => {
         onArrowClick("right")
-        onClick(e)
+        onClick && onClick(e)
       }}
       active={slideDirection === "right"}
     >

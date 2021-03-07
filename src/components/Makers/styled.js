@@ -19,7 +19,11 @@ export const CardWrapper = styled.div`
   padding: 16px;
 
   .Card__img {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+
+    ${media.greaterThan("large")`
+      margin-bottom: 16px;
+    `}
   }
   .Card__title {
     h3 {

@@ -41,8 +41,8 @@ const SponsorshipSystem = () => {
           </p>
           <p className="color-dark">
             Por isso, criamos duas formas de apadrinhamento, o
-            <span className="color-primary"> Padrinho Financeiro </span>e o
-            <span className="color-warning"> Padrinho da Vida.</span>
+            <strong className="color-primary"> Padrinho Financeiro </strong>e o
+            <strong className="color-warning"> Padrinho da Vida.</strong>
           </p>
         </header>
       </Container>

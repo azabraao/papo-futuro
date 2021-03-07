@@ -15,9 +15,13 @@ export const HelpedStudentsWrapper = styled.div`
     }
     ${media.greaterThan("large")`
       font-size: 30px;
-      height: 300px;
+      height: 400px;
     `}
   }
   .HelpedStudents__inside {
+
+    p {
+      margin-bottom: 0;
+    }
   }
 `

@@ -11,9 +11,10 @@ export const DonateNowWrapper = styled.section`
 
     .DonateNow__column {
       &.DonateNow__column-donate {
-        padding: 80px 0;
+        padding: 50px 0;
 
         ${media.greaterThan("large")`
+          padding: 80px 0;
           width: 40%;
         `}
 
@@ -24,6 +25,12 @@ export const DonateNowWrapper = styled.section`
           font-size: 28px;
           font-weight: 700;
           margin-bottom: 24px;
+
+          ${media.greaterThan("large")`
+            text-align: left;
+            font-size: 38px;
+            padding-left: 28px;
+          `}
 
           &::before {
             content: "";
@@ -36,11 +43,25 @@ export const DonateNowWrapper = styled.section`
             position: absolute;
             left: 0;
             right: 0;
-            top: -16px;
+            top: 0;
+
+            ${media.greaterThan("large")`
+              margin-left: 0;
+              top: -5px;
+              width: 50px;
+              height: 6px;
+              border-radius: 8px;
+              left: 28px;
+            `}
           }
         }
 
         .DonateNow__buttons {
+
+          ${media.greaterThan("large")`
+            max-width: 370px;
+          `}
+
           .DonateNow__button {
             padding: 16px;
             text-transform: uppercase;
@@ -50,7 +71,6 @@ export const DonateNowWrapper = styled.section`
             justify-content: center;
             border-radius: 16px;
             width: 100%;
-            margin-bottom: 24px;
             border: none;
             font-size: 14px;
             background: var(--white);
@@ -58,6 +78,10 @@ export const DonateNowWrapper = styled.section`
             font-weight: 700;
             text-decoration: none;
             cursor: pointer;
+
+            &:not(:last-child) {
+              margin-bottom: 24px;
+            }
 
             &.DonateNow__button-1 {
               background: var(--danger);
@@ -87,6 +111,7 @@ export const DonateNowWrapper = styled.section`
             color: var(--white);
             font-weight: bold;
             text-transform: uppercase;
+            margin-bottom: 0;
           }
           small {
             color: var(--warning);

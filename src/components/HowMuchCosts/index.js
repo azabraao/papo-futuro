@@ -5,7 +5,7 @@ import Container from "../Container"
 const HowMuchCosts = () => {
   return (
     <S.HowMuchCostsWrapper className="HowMuchCosts">
-      <Container>
+      <Container noPaddingOnMobile={true}>
         <div className="HowMuchCosts__squares">
           <div className="HowMuchCosts__square HowMuchCosts__square-1">
             <h2>Quanto custa ajudar?</h2>

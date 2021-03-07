@@ -2,6 +2,8 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const FooterWrapper = styled.div`
+  background-color: var(--gray-lighter);
+
   .Footer__top {
     padding: 24px 0;
     border-top: 1px solid #ebebeb;
@@ -40,6 +42,7 @@ export const FooterWrapper = styled.div`
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+            font-size: 18px;
           `}
         }
 
@@ -47,6 +50,10 @@ export const FooterWrapper = styled.div`
           text-decoration: none;
           margin: 12px;
           display: inline-block;
+
+          ${media.greaterThan("large")`
+            margin-bottom: 0;
+          `}
         }
       }
       .Footer__social {
@@ -55,7 +62,7 @@ export const FooterWrapper = styled.div`
         align-items: center;
 
         ${media.greaterThan("large")`
-          width: 390px;
+          width: 300px;
           justify-content: space-around;
         `}
 

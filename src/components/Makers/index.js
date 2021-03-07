@@ -90,12 +90,12 @@ const Makers = () => {
   ]
 
   return (
-    <Section id="equipe">
+    <Section id="equipe" noPaddingBottom={true} background="gray-lighter">
       <Container>
         <MakersWrapper>
           <Title
             lineColor="danger-dark"
-            titleColor="danger"
+            titleColor="warning"
             centeredOnMobile={true}
           >
             quem faz acontecer

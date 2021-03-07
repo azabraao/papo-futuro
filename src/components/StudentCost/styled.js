@@ -2,9 +2,10 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const StudentCostWrapper = styled.div`
-  padding: 80px 0;
+  padding: 16px 0;
 
   ${media.greaterThan("large")`
+  padding: 80px 0;
    display: flex;
     justify-content: space-between;
   `}
@@ -49,10 +50,18 @@ export const StudentCostWrapper = styled.div`
 
       ${media.greaterThan("large")`
         flex-direction: row;
-        width: 80%;
+        width: 90%;
         justify-content:flex-start;
-        padding: 32px;
-        font-size: 24px;line-height: 1.2;
+        padding: 40px;
+        font-size: 24px;
+        line-height: 1.3;
+        padding-left: 80px;
+
+
+        &:last-child {
+          margin-top: 40px;
+        }
+
       `}
 
       article {
@@ -65,6 +74,7 @@ export const StudentCostWrapper = styled.div`
         `}
 
         p {
+          margin-bottom: 0;
         }
       }
 
@@ -72,9 +82,14 @@ export const StudentCostWrapper = styled.div`
         display: flex;
         flex-direction: column;
         p {
-          font-size: 28px;
+          font-size: 35px;
+          font-weight: bold;
+          margin-bottom: 0;
+          letter-spacing: -1px;
+          line-height: 1;
         }
         small {
+          font-size: 22px;
         }
 
         ${media.greaterThan("large")`
@@ -83,13 +98,17 @@ export const StudentCostWrapper = styled.div`
           margin-left: 28px;
 
           p {
-            font-size: 42px;
+            font-size: 52px;
+          }
+          small {
+            font-size: 33px;
           }
         `}
       }
       &.StudentCost__content-box-1 {
         ${media.lessThan("large")`
           background-color: #fafafa;
+          margin-top: 40px;
         `}
 
         div {

@@ -77,8 +77,10 @@ const DesktopLinks = () => (
       <a className="Footer__link color-primary" href="#apoiadores">
         apoiadores
       </a>
-      <a className="Footer__link color-danger" href="#doe-agora">
-        doe agora
+      <a className="Footer__link color-warning" href="#doe-agora">
+        <strong>
+          doe agora
+        </strong>
       </a>
       <a className="Footer__link color-primary" href="#contato">
         contato

@@ -2,7 +2,11 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const HowMuchCostsWrapper = styled.div`
-  margin-bottom: 80px;
+  margin-bottom: 16px;
+
+  ${media.greaterThan("large")`
+      margin-bottom: 80px;
+    `}
 
   .HowMuchCosts__squares {
     display: flex;
@@ -12,7 +16,7 @@ export const HowMuchCostsWrapper = styled.div`
 
     ${media.greaterThan("large")`
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-      `}
+    `}
 
     .HowMuchCosts__square {
       width: 50%;
@@ -44,21 +48,41 @@ export const HowMuchCostsWrapper = styled.div`
         }
       }
       svg {
-        margin-bottom: 16px;
+        margin-bottom: 4px;
       }
 
       p {
         text-transform: uppercase;
-        margin-bottom: 8px;
+        margin-bottom: -4px;
+
+        ${media.greaterThan("large")`
+        margin-bottom: -8px;
+        font-size: 18px;
+`}
       }
       div {
         font-size: 28px;
         font-weight: 700;
+
         small {
           font-size: 12px;
         }
+
+        ${media.greaterThan("large")`
+          font-size: 38px;
+
+          small {          
+            font-size: 16px;
+          }
+        `}
       }
       &.HowMuchCosts__square-1 {
+        ${media.greaterThan("large")`
+         h2 {
+          font-size: 22px;
+          font-weight: bold;
+         }
+        `}
       }
       &.HowMuchCosts__square-2 {
         background: #fafafa 0% 0% no-repeat padding-box;

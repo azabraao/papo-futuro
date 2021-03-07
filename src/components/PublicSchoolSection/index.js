@@ -6,11 +6,11 @@ const PublicSchoolSection = () => {
   return (
     <S.PublicSchoolSectionWrapper>
       <Container>
-        <h1 className="color-primary">
+        <h2 className="color-primary">
           na rede pública do Brasil,
           <span className="color-warning"> 39% dos alunos </span>
           não tem um computador ou tablet em casa.
-        </h1>
+        </h2>
         <article>
           <p className="color-dark">
             O <strong>Projeto Papo Futuro</strong> ajuda alunos das comunidades

@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React, { memo, useState, useEffect } from "react"
 import { SupportersWrapper } from "./styled"
 import Section from "../Section"
 import Title from "../Title"
@@ -7,6 +7,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const Supporters = () => {
+  const [isDesktop, setIsDesktop] = useState(false)
+
+  useEffect(() => {
+    setIsDesktop(window.innerWidth >= 1170)
+  }, [])
+
   const data = useStaticQuery(
     graphql`
       query {
@@ -48,21 +54,43 @@ const Supporters = () => {
   const beesOfLove = data.beesOfLove.childImageSharp.fixed
 
   return (
-    <Section id="apoiadores">
+    <Section id="apoiadores" background="gray-lighter" noPaddingBottom={true}>
       <Container>
         <SupportersWrapper>
-          <Title
-            lineColor="primary-lighter"
-            titleColor="primary"
-            centeredOnMobile={true}
-          >
-            apoiadores
-          </Title>
+          <header>
+            <Title
+              lineColor="primary-lighter"
+              titleColor="primary"
+              centeredOnMobile={true}
+            >
+              apoiadores
+            </Title>
+            <p>
+              Confira as empresas e pessoas que já estão conectadas com a nossa
+              causa:
+            </p>
+          </header>
+
           <div className="Supporters__logo">
-            <Img className="Supporters__logo-img" fixed={make} />
-            <Img className="Supporters__logo-img" fixed={fluke} />
-            <Img className="Supporters__logo-img" fixed={meSalva} />
-            <Img className="Supporters__logo-img" fixed={beesOfLove} />
+            {isDesktop ? (
+              <>
+                <Img className="Supporters__logo-img" fixed={make} />
+                <Img className="Supporters__logo-img" fixed={fluke} />
+                <Img className="Supporters__logo-img" fixed={meSalva} />
+                <Img className="Supporters__logo-img" fixed={beesOfLove} />
+              </>
+            ) : (
+              <>
+                <div className="Supporters__logo-row">
+                  <Img className="Supporters__logo-img" fixed={make} />
+                  <Img className="Supporters__logo-img" fixed={fluke} />
+                </div>
+                <div className="Supporters__logo-row">
+                  <Img className="Supporters__logo-img" fixed={meSalva} />
+                  <Img className="Supporters__logo-img" fixed={beesOfLove} />
+                </div>
+              </>
+            )}
           </div>
         </SupportersWrapper>
       </Container>

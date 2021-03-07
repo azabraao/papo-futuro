@@ -16,9 +16,9 @@ const Testimonials = () => {
     <Section id="depoimentos">
       <TestimonialsWrapper>
         <Title
-          titleColor="black"
+          titleColor="warning"
           centeredOnMobile={true}
-          lineColor="primary-lighter"
+          lineColor="warning-dark"
         >
           depoimentos
         </Title>

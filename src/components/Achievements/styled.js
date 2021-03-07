@@ -14,6 +14,7 @@ export const AchievementsWrapper = styled.div`
           width: 50%;
           position: relative;
           height: 290px;
+          justify-content: space-around;
 
             .Achievements__desktopImage {
               position: absolute !important;
@@ -32,13 +33,23 @@ export const AchievementsWrapper = styled.div`
       justify-content: space-between;
       align-items: center;
 
+        ${media.greaterThan("large")`
+          padding-top: 90px;
+        `};
+
       .Card {
         width: 48%;
         padding: 16px;
         display: flex;
         flex-direction: column;
-        background: #f2f2f2;
+        background: #fbfbfb;
         border-radius: 16px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+        ${media.greaterThan("large")`
+          width: 40%;
+          padding: 24px 16px 40px 16px;
+        `};
 
         .ant-progress {
           display: flex;

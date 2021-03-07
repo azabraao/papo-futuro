@@ -17,7 +17,7 @@ const ContentSection1 = () => {
           <article>
             <h2 className="color-primary">
               Porque acreditamos que só a{" "}
-              <span className="color-danger">educação</span> é capaz de
+              <span className="color-warning">educação</span> é capaz de
               transformar a realidade das pessoas.
             </h2>
             <p>
@@ -28,12 +28,12 @@ const ContentSection1 = () => {
               </span>
             </p>
             <p>
-              <span className="color-primary">
+              <strong className="color-primary">
                 Mas como superar esse desafio em um país onde 6,6 milhões de
                 estudantes não têm acesso à internet?
-              </span>
+              </strong>
             </p>
-            <a href="#manifesto" className="color-danger">
+            <a href="#manifesto" className="color-warning">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23.237"
@@ -45,7 +45,7 @@ const ContentSection1 = () => {
                   data-name="noun_Arrow Left_2682937"
                   d="M11.616,23.237,1.93,13.543,0,11.612l1.93-1.93L11.616,0l1.93,1.926L5.226,10.247H26.737v2.73H5.226L13.547,21.3Z"
                   transform="translate(0 26.737) rotate(-90)"
-                  fill="#ff6f26"
+                  fill="#ffb133"
                 />
               </svg>
               Saiba como

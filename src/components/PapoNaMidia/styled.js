@@ -21,18 +21,26 @@ export const CardWrapper = styled.div`
   align-items: flex-start;
   max-width: 320px;
   margin: 0 auto;
+  padding: 0 16px;
+
+  ${media.greaterThan("large")`
+      max-width: 480px;
+  `}
 
   .Card__img {
-    margin-bottom: 32px;
-    height: 125px;
+    margin-bottom: 16px;
     width: 100%;
+
+    ${media.greaterThan("large")`
+      margin-bottom: 32px;
+    `}
   }
 
   .Card__preTitle {
     margin-bottom: 8px;
     a {
       text-decoration: none;
-      color: var(--danger);
+      color: var(--warning);
       text-transform: uppercase;
       font-size: 13px;
     }
@@ -43,6 +51,11 @@ export const CardWrapper = styled.div`
       h3 {
         color: var(--primary);
         line-height: 1.3;
+
+        ${media.greaterThan("large")`
+          font-size: 28px;
+          margin-bottom: 0px;
+        `}
       }
     }
     margin-bottom: 16px;
@@ -50,12 +63,16 @@ export const CardWrapper = styled.div`
 
   .Card__description {
     color: var(--dark);
-    line-height: 1.3;
+    line-height: 1.4;
     font-size: 13px;
+
+    ${media.greaterThan("large")`
+      font-size: 16px;
+    `}
 
     .Card__description-link {
       text-transform: uppercase;
-      color: var(--danger);
+      color: var(--warning);
       font-weight: bold;
     }
   }

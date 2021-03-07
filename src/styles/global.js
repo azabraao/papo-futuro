@@ -99,7 +99,8 @@ const GlobalStyles = createGlobalStyle`
     --warning-gradient: linear-gradient(131deg, #FFB113, #FFD825);
     --danger: #ff6f26;
     --danger-dark: #e88323;
-    --success: #0AD561
+    --success: #0AD561;
+    --gray-lighter: #fbfbfb
   }
 `
 export default GlobalStyles

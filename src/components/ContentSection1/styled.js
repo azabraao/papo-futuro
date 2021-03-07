@@ -14,6 +14,8 @@ export const ContentSection1Wrapper = styled.section`
       font-size: 22px;
       font-weight: 700;
       margin-bottom: 16px;
+      font-size: 28px;
+      line-height: 1.3;
 
       &::before {
         content: "";

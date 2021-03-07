@@ -7,8 +7,18 @@ export const SponsorshipSystemWrapper = styled.div`
   header {
     margin-bottom: 16px;
 
+    p {
+      margin-bottom: 0;
+    
+    ${media.greaterThan("large")`
+      line-height: 1.3;
+      font-size: 18px;
+    `}
+    }
+
     ${media.greaterThan("large")`
       text-align: center;
+      margin-bottom: 32px;
     `}
   }
   .SponsorshipSystem__columns {

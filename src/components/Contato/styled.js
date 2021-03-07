@@ -6,7 +6,12 @@ export const ContatoWrapper = styled.div`
     line-height: 1.4;
     text-align: center;
     margin: 0 auto 32px auto;
-    max-width: 700px;
+    max-width: 800px;
+color: var(--dark);
+
+    ${media.greaterThan("large")`
+font-size: 18px
+      `}
 
     strong {
       font-weight: bold;
@@ -40,6 +45,10 @@ export const ContatoWrapper = styled.div`
       width: 300px;
       background: var(--primary);
       text-decoration: none;
+      
+      p {
+        margin-bottom: 0;
+      }
 
       ${media.greaterThan("large")`
         margin: 16px;

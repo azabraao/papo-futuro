@@ -1,8 +1,14 @@
-import React, { memo } from "react"
+import React, { memo, useEffect, useState } from "react"
 import Img from "gatsby-image"
 import { CardWrapper } from "./styled"
 
 const Card = ({ image, preTitle, title, description, link }) => {
+  const [isDesktop, setIsDesktop] = useState(false)
+
+  useEffect(() => {
+    setIsDesktop(window.innerWidth >= 1170)
+  }, [])
+
   return (
     <CardWrapper className="Card">
       <div className="Card__img">
@@ -20,14 +26,16 @@ const Card = ({ image, preTitle, title, description, link }) => {
           <h3>{title}</h3>
         </a>
       </div>
-      <div className="Card__description">
-        <p>
-          {description}{" "}
-          <a className="Card__description-link" href={link} target="_blank">
-            Ver mais
-          </a>
-        </p>
-      </div>
+      {isDesktop && (
+        <div className="Card__description">
+          <p>
+            {description}{" "}
+            <a className="Card__description-link" href={link} target="_blank">
+              Ver mais
+            </a>
+          </p>
+        </div>
+      )}
     </CardWrapper>
   )
 }

@@ -17,7 +17,11 @@ export const HowItWorksWrapper = styled.div`
     .HowItWorks__step {
       display: flex;
       align-items: center;
-      padding: 40px 0 24px;
+      padding-bottom: 24px;
+
+      &:not(:first-child) {
+        padding-top: 40px;
+      }
 
       ${media.greaterThan("large")`
         display: flex;
@@ -50,7 +54,7 @@ export const HowItWorksWrapper = styled.div`
           background-size: contain;
           bottom: -39px;
           transform: rotate(90deg);
-          z-index: -1;
+          z-index: 1;
           background-repeat: no-repeat;
 
           ${media.greaterThan("large")`
@@ -73,7 +77,7 @@ export const HowItWorksWrapper = styled.div`
             width: 20px;
             height: 20px;
             background: var(--white);
-            margin: 0 auto;
+            margin: auto;
             bottom: -7px;
             transform: rotate(45deg);
 
@@ -82,6 +86,8 @@ export const HowItWorksWrapper = styled.div`
               right: -7px;
               bottom: unset;
               transform: rotate(45deg);
+              top: 0;
+              bottom: 0;
             }
           `}
           }

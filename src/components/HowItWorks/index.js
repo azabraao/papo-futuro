@@ -16,7 +16,7 @@ const HowItWorks = () => {
   }, [])
 
   return (
-    <Section id="como-funciona">
+    <Section id="como-funciona" background="gray-lighter">
       <S.HowItWorksWrapper className="HowItWorks">
         <Container>
           <header className="HowItWorks__header">
