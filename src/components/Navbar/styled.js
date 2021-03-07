@@ -12,6 +12,13 @@ export const NavbarWrapper = styled.nav`
     .Navbar__logo {
     }
     .Navbar__hamburguer.active {
+      position: fixed;
+      right: 30px;
+
+      ${media.greaterThan("medium")`
+        right: 13%;
+      `}
+
       .Navbar__hamburguer-line:before {
         bottom: 0;
         transform: rotate(45deg);
@@ -149,7 +156,7 @@ export const NavbarWrapper = styled.nav`
       ${media.greaterThan("medium")`
           .Navbar__menu-links {
             padding: 80px 2rem 0 2rem;
-            width: 91%;
+            width: 80%;
             margin: 0 auto;
           }
         `}

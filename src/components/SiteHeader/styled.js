@@ -2,9 +2,11 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const SiteHeaderWrapper = styled.div`
+  .SiteHeader {
+    z-index: 1;
+  }
   .SiteHeader__titles {
-    margin-top: 210px;
-    color: var(--white);
+    margin-top: 260px;
     margin-bottom: 24px;
 
     ${media.greaterThan("large")`
@@ -15,9 +17,11 @@ export const SiteHeaderWrapper = styled.div`
       font-weight: 700;
       line-height: 1.5;
       font-size: 1.7rem;
+      color: var(--white);
     }
 
     h2 {
+      color: var(--white);
       font-size: 0.9rem;
     }
   }
