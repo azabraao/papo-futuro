@@ -29,47 +29,83 @@ const Navbar = () => {
           >
             <ul className="Navbar__menu-links">
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#o-projeto">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor"
+                  href="#o-projeto"
+                >
                   o projeto
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#como-funciona">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor"
+                  href="#como-funciona"
+                >
                   como funciona
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#depoimentos">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor"
+                  href="#depoimentos"
+                >
                   depoimentos
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#conquistas">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor"
+                  href="#conquistas"
+                >
                   conquistas
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#midia">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor"
+                  href="#midia"
+                >
                   mídia
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#apoiadores">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor"
+                  href="#apoiadores"
+                >
                   apoiadores
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#equipe">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor"
+                  href="#equipe"
+                >
                   equipe
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#contato">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor"
+                  href="#contato"
+                >
                   contato
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor Navbar__menu-link-anchor--btn" href="#doe-agora">
+                <a
+                  onClick={() => setMenuIsActive(false)}
+                  className="Navbar__menu-link-anchor Navbar__menu-link-anchor--btn"
+                  href="#doe-agora"
+                >
                   doe agora
                 </a>
               </li>
