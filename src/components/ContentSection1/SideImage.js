@@ -9,7 +9,7 @@ const SideImage = () => {
         image: file(relativePath: { eq: "pessoas-mexendo-no-notebook.png" }) {
           childImageSharp {
             fluid(maxWidth: 1170, quality: 60) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }

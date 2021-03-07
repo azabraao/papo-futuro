@@ -10,7 +10,7 @@ const Logo = () => {
         mobileImage: file(relativePath: { eq: "logo-papo-futuro-white.png" }) {
           childImageSharp {
             fluid(maxWidth: 150) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }

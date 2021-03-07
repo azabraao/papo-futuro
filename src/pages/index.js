@@ -27,6 +27,7 @@ const Supporters = React.lazy(() => import("../components/Supporters"))
 const Makers = React.lazy(() => import("../components/Makers"))
 const Contato = React.lazy(() => import("../components/Contato"))
 const Footer = React.lazy(() => import("../components/Footer"))
+const Fonts = React.lazy(() => import("../components/Fonts"))
 
 export default function Home() {
   const isSSR = typeof window === "undefined"
@@ -56,6 +57,7 @@ export default function Home() {
           <Makers />
           <Contato />
           <Footer />
+          <Fonts />
         </Suspense>
       )}
     </div>

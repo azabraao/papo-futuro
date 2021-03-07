@@ -4,11 +4,12 @@ import { Helmet } from "react-helmet"
 const SEO = () => {
   return (
     <Helmet>
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
-        rel="stylesheet"
+      <title>Papofuturo</title>
+      <meta
+        name="description"
+        content="Projeto Papo Futuro - Vamos fazer com que jovens de comunidades voltem a estudar para perseguirem seus sonhos!"
       />
+      <meta name="author" content="Papofuturo" />
     </Helmet>
   )
 }

@@ -11,7 +11,7 @@ const SiteHeader = ({ children }) => {
         mobileImage: file(relativePath: { eq: "menino-sorrindo.png" }) {
           childImageSharp {
             fluid(maxWidth: 1170, quality: 60) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }
