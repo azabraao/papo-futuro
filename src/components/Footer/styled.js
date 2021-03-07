@@ -71,7 +71,10 @@ export const FooterWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 190px;
+
+    ${media.greaterThan("large")`
+      height: 190px;
+    `}
 
     .Footer__desktop-column-img {
     }

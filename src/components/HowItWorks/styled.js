@@ -51,6 +51,7 @@ export const HowItWorksWrapper = styled.div`
           bottom: -39px;
           transform: rotate(90deg);
           z-index: -1;
+          background-repeat: no-repeat;
 
           ${media.greaterThan("large")`
               left: unset;
@@ -64,26 +65,26 @@ export const HowItWorksWrapper = styled.div`
               margin: auto;
             }
           `}
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          right: 0;
-          width: 20px;
-          height: 20px;
-          background: var(--white);
-          margin: 0 auto;
-          bottom: -7px;
-          transform: rotate(45deg);
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--white);
+            margin: 0 auto;
+            bottom: -7px;
+            transform: rotate(45deg);
 
-          ${media.greaterThan("large")`
+            ${media.greaterThan("large")`
               left: unset;
               right: -7px;
               bottom: unset;
               transform: rotate(45deg);
             }
           `}
+          }
         }
       }
 

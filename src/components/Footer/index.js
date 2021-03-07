@@ -23,37 +23,7 @@ const Footer = () => {
               </div>
             )}
             <div className="Footer__links">
-              <div className="Footer__links-column">
-                <a className="Footer__link color-primary" href="#home">
-                  home
-                </a>
-                <a className="Footer__link color-primary" href="#o-projeto">
-                  o projeto
-                </a>
-                <a className="Footer__link color-primary" href="#como-funciona">
-                  como funciona
-                </a>
-                <a className="Footer__link color-primary" href="#depoimentos">
-                  depoimentos
-                </a>
-                <a className="Footer__link color-primary" href="#conquistas">
-                  conquistas
-                </a>
-              </div>
-              <div className="Footer__links-column">
-                <a className="Footer__link color-primary" href="#midia">
-                  mídia
-                </a>
-                <a className="Footer__link color-primary" href="#apoiadores">
-                  apoiadores
-                </a>
-                <a className="Footer__link color-danger" href="#doe-agora">
-                  doe agora
-                </a>
-                <a className="Footer__link color-primary" href="#contato">
-                  contato
-                </a>
-              </div>
+              {isDesktop ? <DesktopLinks /> : <MobileLinks />}
             </div>
             <div className="Footer__desktop-column">
               {isDesktop && (
@@ -80,5 +50,73 @@ const Footer = () => {
     </S.FooterWrapper>
   )
 }
+
+const DesktopLinks = () => (
+  <>
+    <div className="Footer__links-column">
+      <a className="Footer__link color-primary" href="#home">
+        home
+      </a>
+      <a className="Footer__link color-primary" href="#o-projeto">
+        o projeto
+      </a>
+      <a className="Footer__link color-primary" href="#como-funciona">
+        como funciona
+      </a>
+      <a className="Footer__link color-primary" href="#depoimentos">
+        depoimentos
+      </a>
+      <a className="Footer__link color-primary" href="#conquistas">
+        conquistas
+      </a>
+    </div>
+    <div className="Footer__links-column">
+      <a className="Footer__link color-primary" href="#midia">
+        mídia
+      </a>
+      <a className="Footer__link color-primary" href="#apoiadores">
+        apoiadores
+      </a>
+      <a className="Footer__link color-danger" href="#doe-agora">
+        doe agora
+      </a>
+      <a className="Footer__link color-primary" href="#contato">
+        contato
+      </a>
+    </div>
+  </>
+)
+
+const MobileLinks = () => (
+  <>
+    <a className="Footer__link color-primary" href="#home">
+      home
+    </a>
+    <a className="Footer__link color-primary" href="#o-projeto">
+      o projeto
+    </a>
+    <a className="Footer__link color-primary" href="#como-funciona">
+      como funciona
+    </a>
+    <a className="Footer__link color-primary" href="#depoimentos">
+      depoimentos
+    </a>
+    <a className="Footer__link color-primary" href="#conquistas">
+      conquistas
+    </a>
+    <a className="Footer__link color-primary" href="#midia">
+      mídia
+    </a>
+    <a className="Footer__link color-primary" href="#apoiadores">
+      apoiadores
+    </a>
+    <a className="Footer__link color-danger" href="#doe-agora">
+      doe agora
+    </a>
+    <a className="Footer__link color-primary" href="#contato">
+      contato
+    </a>
+  </>
+)
 
 export default memo(Footer)

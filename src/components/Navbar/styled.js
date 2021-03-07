@@ -51,6 +51,7 @@ export const NavbarWrapper = styled.nav`
         position: relative;
         display: block;
         transition: 0.3s;
+        border-radius: 8px;
       }
 
       .Navbar__hamburguer-line:before {
@@ -62,6 +63,7 @@ export const NavbarWrapper = styled.nav`
       }
 
       .Navbar__hamburguer-line {
+        border-radius: 8px;
         background: var(--white);
         width: 36px;
         position: relative;
