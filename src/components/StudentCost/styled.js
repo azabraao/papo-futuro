@@ -108,7 +108,6 @@ export const StudentCostWrapper = styled.div`
       &.StudentCost__content-box-1 {
         ${media.lessThan("large")`
           background-color: #fafafa;
-          margin-top: 40px;
         `}
 
         div {
