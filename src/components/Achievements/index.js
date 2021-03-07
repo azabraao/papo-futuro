@@ -19,7 +19,7 @@ const Achievements = () => {
 
     const fetchSheetsApi = async () => {
       try {
-        const response = await fetch("http://papofuturo.com.br/v2/api/get-targets.php")
+        const response = await fetch("http://papofuturo.com.br/api/get-targets.php")
         const data = await response.json()
         setAlunosAjudados(data.alunos_ajudados)
         setValorArrecadado(data.captacao_total)
