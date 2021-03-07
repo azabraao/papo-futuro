@@ -12,17 +12,17 @@ const Card = ({ image, preTitle, title, description, link }) => {
   return (
     <CardWrapper className="Card">
       <div className="Card__img">
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
           <Img fluid={image} />
         </a>
       </div>
       <div className="Card__preTitle">
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
           <span>{preTitle}</span>
         </a>
       </div>
       <div className="Card__title">
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
           <h3>{title}</h3>
         </a>
       </div>
@@ -30,7 +30,7 @@ const Card = ({ image, preTitle, title, description, link }) => {
         <div className="Card__description">
           <p>
             {description}{" "}
-            <a className="Card__description-link" href={link} target="_blank">
+            <a className="Card__description-link" href={link} target="_blank" rel="noreferrer">
               Ver mais
             </a>
           </p>

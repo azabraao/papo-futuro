@@ -33,7 +33,7 @@ const DonateNowDesktop = () => {
   return (
     <>
       <a
-        target="_blank"
+        target="_blank" rel="noreferrer"
         href="https://docs.google.com/forms/d/e/1FAIpQLSfX5-FSJ9_CFsbpbl30NP1kloaD8ehwMGvVuHq_LvG5W6AsGA/viewform"
         className="DonateNow__button DonateNow__button-1"
       >

@@ -43,7 +43,7 @@ const ManifestSection = () => {
       >
         <a
           href="https://www.youtube.com/watch?v=465SsmWDZ6M&t=3s"
-          target="_blank"
+          target="_blank" rel="noreferrer"
           className="ManifestSectionWrapper__click-area"
         >
           <div className="ManifestSectionWrapper__click-area-inside">

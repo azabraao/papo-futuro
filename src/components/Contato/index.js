@@ -44,7 +44,7 @@ const Contato = () => {
           </div>
           <div className="Contato__links">
             <a
-              target="_blank"
+              target="_blank" rel="noreferrer"
               href="https://api.whatsapp.com/send/?phone=5511936180046&text=Oi%21+Eu+quero+saber+mais+sobre+o+projeto.&app_absent=0"
               className="Contato__link whatsapp"
             >
@@ -56,7 +56,7 @@ const Contato = () => {
               <p>envie um e-mail</p>
             </a>
             <a
-              target="_blank"
+              target="_blank" rel="noreferrer"
               href="https://www.instagram.com/papo.futuro/"
               className="Contato__link"
             >
@@ -64,7 +64,7 @@ const Contato = () => {
               <p>Instagram</p>
             </a>
             <a
-              target="_blank"
+              target="_blank" rel="noreferrer"
               href="https://www.linkedin.com/company/papo-futuro/"
               className="Contato__link"
             >
@@ -72,7 +72,7 @@ const Contato = () => {
               <p>Linkedin</p>
             </a>
             <a
-              target="_blank"
+              target="_blank" rel="noreferrer"
               href="https://docs.google.com/forms/d/1S5UoGoReGxUbH6qpH6CesPSjqoPWOpp80NW6T3A5XyI/closedform"
               className="Contato__link sou-aluno"
             >

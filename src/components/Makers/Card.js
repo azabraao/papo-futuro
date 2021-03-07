@@ -14,7 +14,7 @@ const Card = ({ image, initialInfo, title, linkedinLink }) => {
       <div className="Card__description">
         <p>
           {initialInfo}
-          <a className="Card__description-link" href={linkedinLink} target="_blank" rel="noopener noreferrer">
+          <a className="Card__description-link" href={linkedinLink} target="_blank" rel="noreferrer" rel="noopener noreferrer">
             <LinkedinLogo />
           </a>
         </p>

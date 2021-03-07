@@ -3,7 +3,7 @@ import React from "react"
 export const Facebook = () => {
   return (
     <a
-      target="_blank"
+      target="_blank" rel="noreferrer"
       href="https://www.facebook.com/Papo-Futuro-101910254915045/"
     >
       <svg
@@ -24,7 +24,7 @@ export const Facebook = () => {
 
 export const Twitter = () => {
   return (
-    <a target="_blank" href="#">
+    <a target="_blank" rel="noreferrer" href="#">
       <svg
         width="27"
         height="22"
@@ -43,7 +43,7 @@ export const Twitter = () => {
 
 export const LinkedIn = () => {
   return (
-    <a target="_blank" href="https://www.linkedin.com/company/papo-futuro/">
+    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/papo-futuro/">
       <svg
         width="23"
         height="22"
@@ -62,7 +62,7 @@ export const LinkedIn = () => {
 
 export const Instagram = () => {
   return (
-    <a target="_blank" href="https://www.instagram.com/papo.futuro">
+    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/papo.futuro">
       <svg
         width="30"
         height="31"
@@ -90,7 +90,7 @@ export const Instagram = () => {
 export const YouTube = () => {
   return (
     <a
-      target="_blank"
+      target="_blank" rel="noreferrer"
       href="https://www.youtube.com/channel/UC_R6tXHCS14p1TiOrCS3Otw"
     >
       <svg

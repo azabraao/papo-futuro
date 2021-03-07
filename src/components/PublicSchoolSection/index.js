@@ -35,7 +35,7 @@ const PublicSchoolSection = () => {
           </div>
           <div className="PublicSchoolSection__button-1-wrap">
             <a
-              target="_blank"
+              target="_blank" rel="noreferrer"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfX5-FSJ9_CFsbpbl30NP1kloaD8ehwMGvVuHq_LvG5W6AsGA/viewform?usp=send_form"
               className="PublicSchoolSection__button-2"
             >
