@@ -13,7 +13,7 @@ const PapoNaMidia = () => {
   }, [])
 
   return (
-    <Section>
+    <Section id="midia">
       <S.PapoNaMidiaWrapper>
         <Container>
           <Title

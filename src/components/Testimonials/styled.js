@@ -2,7 +2,6 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const TestimonialsWrapper = styled.div`
-  padding: 2rem 0;
 
   .slick-slide {
     opacity: 0.5;

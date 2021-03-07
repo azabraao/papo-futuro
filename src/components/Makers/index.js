@@ -90,7 +90,7 @@ const Makers = () => {
   ]
 
   return (
-    <Section>
+    <Section id="equipe">
       <Container>
         <MakersWrapper>
           <Title

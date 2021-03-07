@@ -11,7 +11,7 @@ const ContentSection1 = () => {
   }, [])
 
   return (
-    <S.ContentSection1Wrapper>
+    <S.ContentSection1Wrapper id="o-projeto">
       <Container>
         <div className="ContentSection1Wrapper__inner">
           <article>

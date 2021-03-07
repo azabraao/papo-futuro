@@ -1,5 +1,5 @@
 import React, { memo, useEffect, useState } from "react"
-import * as S from "./styled"
+import { DonateNowWrapper } from "./styled"
 import DonateNowDesktop from "./DonateNowDesktop"
 import DonateNowMobile from "./DonateNowMobile"
 
@@ -11,9 +11,9 @@ const DonateNow = () => {
   }, [])
 
   return (
-    <S.DonateNowWrapper>
+    <DonateNowWrapper id="doe-agora">
       {isDesktop ? <DonateNowDesktop /> : <DonateNowMobile />}
-    </S.DonateNowWrapper>
+    </DonateNowWrapper>
   )
 }
 

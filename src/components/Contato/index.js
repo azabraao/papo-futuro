@@ -31,7 +31,7 @@ const Contato = () => {
   const imageData = data.image.childImageSharp.fluid
 
   return (
-    <Section noPaddingBottom={true}>
+    <Section noPaddingBottom={true} id="contato">
       <ContatoWrapper>
         <Container>
           <Title

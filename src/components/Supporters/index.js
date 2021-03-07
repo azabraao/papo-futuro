@@ -48,7 +48,7 @@ const Supporters = () => {
   const beesOfLove = data.beesOfLove.childImageSharp.fixed
 
   return (
-    <Section>
+    <Section id="apoiadores">
       <Container>
         <SupportersWrapper>
           <Title

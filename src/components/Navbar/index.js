@@ -29,47 +29,47 @@ const Navbar = () => {
           >
             <ul className="Navbar__menu-links">
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#">
+                <a className="Navbar__menu-link-anchor" href="#o-projeto">
                   o projeto
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#">
+                <a className="Navbar__menu-link-anchor" href="#como-funciona">
                   como funciona
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#">
+                <a className="Navbar__menu-link-anchor" href="#depoimentos">
                   depoimentos
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#">
+                <a className="Navbar__menu-link-anchor" href="#conquistas">
                   conquistas
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#">
+                <a className="Navbar__menu-link-anchor" href="#midia">
                   mídia
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#">
+                <a className="Navbar__menu-link-anchor" href="#apoiadores">
                   apoiadores
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#">
+                <a className="Navbar__menu-link-anchor" href="#equipe">
                   equipe
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor" href="#">
+                <a className="Navbar__menu-link-anchor" href="#contato">
                   contato
                 </a>
               </li>
               <li className="Navbar__menu-link">
-                <a className="Navbar__menu-link-anchor Navbar__menu-link-anchor--btn" href="#">
+                <a className="Navbar__menu-link-anchor Navbar__menu-link-anchor--btn" href="#doe-agora">
                   doe agora
                 </a>
               </li>

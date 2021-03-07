@@ -3,6 +3,7 @@ import Title from "../Title"
 import Slide from "./Slide"
 import { TestimonialsWrapper } from "./styled"
 import Container from "../Container"
+import Section from "../Section"
 
 const Testimonials = () => {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -12,22 +13,24 @@ const Testimonials = () => {
   }, [])
 
   return (
-    <TestimonialsWrapper>
-      <Title
-        titleColor="black"
-        centeredOnMobile={true}
-        lineColor="primary-lighter"
-      >
-        depoimentos
-      </Title>
-      {isDesktop ? (
-        <Container>
+    <Section id="depoimentos">
+      <TestimonialsWrapper>
+        <Title
+          titleColor="black"
+          centeredOnMobile={true}
+          lineColor="primary-lighter"
+        >
+          depoimentos
+        </Title>
+        {isDesktop ? (
+          <Container>
+            <Slide />
+          </Container>
+        ) : (
           <Slide />
-        </Container>
-      ) : (
-        <Slide />
-      )}
-    </TestimonialsWrapper>
+        )}
+      </TestimonialsWrapper>
+    </Section>
   )
 }
 

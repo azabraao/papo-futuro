@@ -34,7 +34,7 @@ const Achievements = () => {
   }, [])
 
   return (
-    <Section>
+    <Section id="conquistas">
       <Container>
         <AchievementsWrapper>
           <Title
