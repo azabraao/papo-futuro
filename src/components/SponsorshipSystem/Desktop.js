@@ -2,6 +2,7 @@ import React, { memo } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Container from "../Container"
+import Title from "../Title"
 
 const SponsorshipSystem = () => {
   const data = useStaticQuery(
@@ -27,7 +28,13 @@ const SponsorshipSystem = () => {
     <>
       <Container>
         <header>
-          <h2 className="color-warning">sistema de apadrinhamento</h2>
+          <Title 
+            titleColor="warning"
+            lineColor="warning-dark"
+            titleMarginBottom="24px"
+          >
+            sistema de apadrinhamento
+          </Title>
           <p className="color-dark">
             Os alunos apoiados pelo papo precisam de ajuda além de uma doação
             para conseguirem transformar suas vidas.

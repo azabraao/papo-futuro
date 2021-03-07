@@ -1,7 +1,8 @@
 import React, { memo, useEffect, useState } from "react"
 import Desktop from "./Desktop"
 import Mobile from "./Mobile"
-import * as S from "./styled"
+import { SponsorshipSystemWrapper } from "./styled"
+import Section from "../Section"
 
 const SponsorshipSystem = () => {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -11,9 +12,11 @@ const SponsorshipSystem = () => {
   }, [])
 
   return (
-    <S.SponsorshipSystemWrapper className="SponsorshipSystem">
-      {isDesktop ? <Desktop /> : <Mobile />}
-    </S.SponsorshipSystemWrapper>
+    <Section>
+      <SponsorshipSystemWrapper className="SponsorshipSystem">
+        {isDesktop ? <Desktop /> : <Mobile />}
+      </SponsorshipSystemWrapper>
+    </Section>
   )
 }
 

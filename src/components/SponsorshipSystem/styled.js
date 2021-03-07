@@ -2,43 +2,13 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const SponsorshipSystemWrapper = styled.div`
-  padding: 80px 0;
   line-height: 1.2;
 
   header {
     margin-bottom: 16px;
 
-    h2 {
-      position: relative;
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 16px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: var(--danger);
-        top: -15px;
-        display: block;
-        height: 6px;
-        width: 40px;
-        border-radius: 8px;
-      }
-    }
-
     ${media.greaterThan("large")`
       text-align: center;
-
-      h2 {
-        font-size: 28px;
-        
-        &::before {
-          margin: 0 auto;
-          left: 0;
-          right: 0;
-        }
-      }
-
     `}
   }
   .SponsorshipSystem__columns {

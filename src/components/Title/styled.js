@@ -7,8 +7,12 @@ export const TitleWrapper = styled.h2`
   font-weight: 700;
   margin-bottom: 16px;
   color: var(--${props => props.titleColor});
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: ${props => (props.centeredOnMobile ? "center" : "left")};
+  margin-bottom: ${props =>
+    props.titleMarginBottom ? props.titleMarginBottom : "40px"};
+  max-width: ${props => (props.maxWidth ? props.maxWidth : "unset")};
+  margin-left: auto;
+  margin-right: auto;
 
   &::before {
     content: "";
@@ -32,5 +36,6 @@ export const TitleWrapper = styled.h2`
 
   ${media.greaterThan("large")`
     font-size: 47px;
+    text-align: center;
   `}
 `
