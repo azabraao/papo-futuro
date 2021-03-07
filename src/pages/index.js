@@ -1,24 +1,32 @@
-import React from "react"
-import StudentCost from "../components/StudentCost"
-import ContentSection1 from "../components/ContentSection1"
-import DonateNow from "../components/DonateNow"
-import HowItWorks from "../components/HowItWorks"
-import HowMuchCosts from "../components/HowMuchCosts"
-import ManifestSection from "../components/ManifestSection"
+import React, { Suspense } from "react"
 import Navbar from "../components/Navbar"
-import PublicSchoolSection from "../components/PublicSchoolSection"
-import SEO from "../components/SEO"
 import SiteHeader from "../components/SiteHeader"
-import SponsorshipSystem from "../components/SponsorshipSystem"
-import Testimonials from "../components/Testimonials"
+import SEO from "../components/SEO"
 import GlobalStyles from "../styles/global"
-import HelpedStudents from "../components/HelpedStudents"
-import Achievements from "../components/Achievements"
-import PapoNaMidia from "../components/PapoNaMidia"
-import Supporters from "../components/Supporters"
-import Makers from "../components/Makers"
-import Contato from "../components/Contato"
-import Footer from "../components/Footer"
+const StudentCost = React.lazy(() => import("../components/StudentCost"))
+const ContentSection1 = React.lazy(() =>
+  import("../components/ContentSection1")
+)
+const DonateNow = React.lazy(() => import("../components/DonateNow"))
+const HowItWorks = React.lazy(() => import("../components/HowItWorks"))
+const HowMuchCosts = React.lazy(() => import("../components/HowMuchCosts"))
+const ManifestSection = React.lazy(() =>
+  import("../components/ManifestSection")
+)
+const PublicSchoolSection = React.lazy(() =>
+  import("../components/PublicSchoolSection")
+)
+const SponsorshipSystem = React.lazy(() =>
+  import("../components/SponsorshipSystem")
+)
+const Testimonials = React.lazy(() => import("../components/Testimonials"))
+const HelpedStudents = React.lazy(() => import("../components/HelpedStudents"))
+const Achievements = React.lazy(() => import("../components/Achievements"))
+const PapoNaMidia = React.lazy(() => import("../components/PapoNaMidia"))
+const Supporters = React.lazy(() => import("../components/Supporters"))
+const Makers = React.lazy(() => import("../components/Makers"))
+const Contato = React.lazy(() => import("../components/Contato"))
+const Footer = React.lazy(() => import("../components/Footer"))
 
 export default function Home() {
   return (
@@ -28,22 +36,24 @@ export default function Home() {
       <SiteHeader>
         <Navbar />
       </SiteHeader>
-      <ContentSection1 />
-      <ManifestSection />
-      <PublicSchoolSection />
-      <HowMuchCosts />
-      <DonateNow />
-      <StudentCost />
-      <SponsorshipSystem />
-      <HowItWorks />
-      <Testimonials />
-      <HelpedStudents />
-      <Achievements />
-      <PapoNaMidia />
-      <Supporters />
-      <Makers />
-      <Contato />
-      <Footer />
+      <Suspense fallback={<div>loading....</div>}>
+        <ContentSection1 />
+        <ManifestSection />
+        <PublicSchoolSection />
+        <HowMuchCosts />
+        <DonateNow />
+        <StudentCost />
+        <SponsorshipSystem />
+        <HowItWorks />
+        <Testimonials />
+        <HelpedStudents />
+        <Achievements />
+        <PapoNaMidia />
+        <Supporters />
+        <Makers />
+        <Contato />
+        <Footer />
+      </Suspense>
     </div>
   )
 }
