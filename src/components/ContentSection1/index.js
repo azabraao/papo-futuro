@@ -33,7 +33,7 @@ const ContentSection1 = () => {
                 estudantes não têm acesso à internet?
               </span>
             </p>
-            <a href="#" className="color-danger">
+            <a href="#manifesto" className="color-danger">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23.237"

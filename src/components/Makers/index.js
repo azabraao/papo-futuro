@@ -102,8 +102,9 @@ const Makers = () => {
           </Title>
           <div className="Makers__list">
             {isDesktop ? (
-              profiles.map(({ image, title, link, info }) => (
+              profiles.map(({ image, title, link, info }, index) => (
                 <Card
+                  key={index}
                   image={image}
                   title={title}
                   linkedinLink={link}
@@ -112,8 +113,9 @@ const Makers = () => {
               ))
             ) : (
               <Slide slideCentered={false}>
-                {profiles.map(({ image, title, link, info }) => (
+                {profiles.map(({ image, title, link, info }, index) => (
                   <Card
+                    key={index}
                     image={image}
                     title={title}
                     linkedinLink={link}

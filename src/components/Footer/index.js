@@ -12,7 +12,6 @@ const Footer = () => {
     setIsDesktop(window.innerWidth >= 1170)
   }, [])
 
-
   return (
     <S.FooterWrapper>
       <div className="Footer__top">
@@ -20,39 +19,38 @@ const Footer = () => {
           <div className="Footer__inside">
             {!isDesktop && (
               <div className="Footer__logo">
-                <LogoMobile/>
+                <LogoMobile />
               </div>
-
             )}
             <div className="Footer__links">
               <div className="Footer__links-column">
-                <a className="Footer__link color-primary" href="#">
+                <a className="Footer__link color-primary" href="#home">
                   home
                 </a>
-                <a className="Footer__link color-primary" href="#">
+                <a className="Footer__link color-primary" href="#o-projeto">
                   o projeto
                 </a>
-                <a className="Footer__link color-primary" href="#">
+                <a className="Footer__link color-primary" href="#como-funciona">
                   como funciona
                 </a>
-                <a className="Footer__link color-primary" href="#">
+                <a className="Footer__link color-primary" href="#depoimentos">
                   depoimentos
                 </a>
-                <a className="Footer__link color-primary" href="#">
+                <a className="Footer__link color-primary" href="#conquistas">
                   conquistas
                 </a>
               </div>
               <div className="Footer__links-column">
-                <a className="Footer__link color-primary" href="#">
+                <a className="Footer__link color-primary" href="#midia">
                   mídia
                 </a>
-                <a className="Footer__link color-primary" href="#">
+                <a className="Footer__link color-primary" href="#apoiadores">
                   apoiadores
                 </a>
-                <a className="Footer__link color-danger" href="#">
+                <a className="Footer__link color-danger" href="#doe-agora">
                   doe agora
                 </a>
-                <a className="Footer__link color-primary" href="#">
+                <a className="Footer__link color-primary" href="#contato">
                   contato
                 </a>
               </div>

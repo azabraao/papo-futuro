@@ -49,7 +49,11 @@ const Contato = () => {
             ajudar um aluno, preencher nosso formulário :)
           </div>
           <div className="Contato__links">
-            <a href="#" className="Contato__link whatsapp">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=5511936180046&text=Oi%21+Eu+quero+saber+mais+sobre+o+projeto.&app_absent=0"
+              className="Contato__link whatsapp"
+            >
               <WhatsappIcon />
               <p>Comece um chat</p>
             </a>
@@ -57,15 +61,27 @@ const Contato = () => {
               <Email />
               <p>envie um e-mail</p>
             </a>
-            <a href="#" className="Contato__link">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/papo.futuro/"
+              className="Contato__link"
+            >
               <Instagram />
               <p>Instagram</p>
             </a>
-            <a href="#" className="Contato__link">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/papo-futuro/"
+              className="Contato__link"
+            >
               <LinkedIn />
               <p>Linkedin</p>
             </a>
-            <a href="#" className="Contato__link sou-aluno">
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/1S5UoGoReGxUbH6qpH6CesPSjqoPWOpp80NW6T3A5XyI/closedform"
+              className="Contato__link sou-aluno"
+            >
               <p>
                 Sou aluno ou conheço um aluno
                 {isDesktop && "que precisa de ajuda"}

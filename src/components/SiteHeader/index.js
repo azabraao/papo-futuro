@@ -35,7 +35,7 @@ const SiteHeader = ({ children }) => {
   ]
 
   return (
-    <S.SiteHeaderWrapper>
+    <S.SiteHeaderWrapper id="home">
       <BackgroundImage
         Tag="section"
         className="SiteHeader"
@@ -49,7 +49,7 @@ const SiteHeader = ({ children }) => {
             <h2>conectando pessoas a um futuro melhor.</h2>
           </header>
           <div className="SiteHeader__buttons">
-            <a href="" className="SiteHeader__button-1">
+            <a href="#o-projeto" className="SiteHeader__button-1">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const SiteHeader = ({ children }) => {
               </div>
               Conheça o projeto
             </a>
-            <a href="" className="SiteHeader__button-2">
+            <a href="#doe-agora" className="SiteHeader__button-2">
               Doe agora
             </a>
           </div>

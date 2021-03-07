@@ -2,7 +2,10 @@ import React from "react"
 
 export const Facebook = () => {
   return (
-    <a href="#">
+    <a
+      target="_blank"
+      href="https://www.facebook.com/Papo-Futuro-101910254915045/"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="18.127"
@@ -23,7 +26,7 @@ export const Facebook = () => {
 
 export const Twitter = () => {
   return (
-    <a href="#">
+    <a target="_blank" href="#">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="35.807"
@@ -44,7 +47,7 @@ export const Twitter = () => {
 
 export const LinkedIn = () => {
   return (
-    <a href="#">
+    <a target="_blank" href="https://www.linkedin.com/company/papo-futuro/">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30.166"
@@ -64,7 +67,7 @@ export const LinkedIn = () => {
 
 export const Instagram = () => {
   return (
-    <a href="#">
+    <a target="_blank" href="https://www.instagram.com/papo.futuro">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="39.157"
@@ -101,7 +104,10 @@ export const Instagram = () => {
 
 export const YouTube = () => {
   return (
-    <a href="#">
+    <a
+      target="_blank"
+      href="https://www.youtube.com/channel/UC_R6tXHCS14p1TiOrCS3Otw"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="43.675"

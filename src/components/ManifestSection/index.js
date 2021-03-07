@@ -2,7 +2,7 @@ import React, { memo } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
-import * as S from "./styled"
+import { ManifestSectionWrapper } from "./styled"
 
 const ManifestSection = () => {
   const data = useStaticQuery(
@@ -35,7 +35,7 @@ const ManifestSection = () => {
   ]
 
   return (
-    <S.ManifestSectionWrapper>
+    <ManifestSectionWrapper id="manifesto">
       <BackgroundImage
         Tag="section"
         className="ManifestSectionWrapper__image"
@@ -68,7 +68,7 @@ const ManifestSection = () => {
           </div>
         </a>
       </BackgroundImage>
-    </S.ManifestSectionWrapper>
+    </ManifestSectionWrapper>
   )
 }
 

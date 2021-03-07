@@ -8,7 +8,7 @@ const PublicSchoolSection = () => {
       <Container>
         <h1 className="color-primary">
           na rede pública do Brasil,
-          <span className="color-warning"> 39% dos alunos</span>
+          <span className="color-warning"> 39% dos alunos </span>
           não tem um computador ou tablet em casa.
         </h1>
         <article>
@@ -29,12 +29,16 @@ const PublicSchoolSection = () => {
         </article>
         <div className="PublicSchoolSection__buttons">
           <div className="PublicSchoolSection__button-1-wrap">
-            <a href="#" className="PublicSchoolSection__button-1">
+            <a href="#depoimentos" className="PublicSchoolSection__button-1">
               Conheça os alunos já ajudados
             </a>
           </div>
           <div className="PublicSchoolSection__button-1-wrap">
-            <a href="#" className="PublicSchoolSection__button-2">
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfX5-FSJ9_CFsbpbl30NP1kloaD8ehwMGvVuHq_LvG5W6AsGA/viewform?usp=send_form"
+              className="PublicSchoolSection__button-2"
+            >
               veja como doar equipamentos
             </a>
           </div>

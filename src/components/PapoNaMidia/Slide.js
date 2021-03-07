@@ -88,7 +88,7 @@ const PrevArrow = ({ onClick, onArrowClick, slideDirection }) => {
   return (
     <SlideArrow
       isLeft={true}
-      active={slideDirection == "left"}
+      active={slideDirection === "left"}
       onClick={e => {
         onArrowClick("left")
         onClick(e)
@@ -116,7 +116,7 @@ const NextArrow = ({ onClick, onArrowClick, slideDirection }) => {
         onArrowClick("right")
         onClick(e)
       }}
-      active={slideDirection == "right"}
+      active={slideDirection === "right"}
     >
       <svg
         width="25"
