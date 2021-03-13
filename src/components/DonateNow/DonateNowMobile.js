@@ -42,6 +42,7 @@ const DonateNowMobile = () => {
     <div className="DonateNow__inside">
       <BackgroundImage
         Tag="div"
+        style={{ zIndex: 1 }}
         fluid={donateNowImage}
         className="DonateNow__column DonateNow__column-donate"
       >

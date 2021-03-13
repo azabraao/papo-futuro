@@ -11,7 +11,9 @@ export const DonateNowWrapper = styled.section`
 
     .DonateNow__column {
       &.DonateNow__column-donate {
+        z-index: 1;
         padding: 50px 0;
+        position: relative;
 
         ${media.greaterThan("large")`
           padding: 80px 0;
@@ -57,7 +59,6 @@ export const DonateNowWrapper = styled.section`
         }
 
         .DonateNow__buttons {
-
           ${media.greaterThan("large")`
             max-width: 370px;
           `}

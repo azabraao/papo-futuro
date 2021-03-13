@@ -54,7 +54,7 @@ export const HowItWorksWrapper = styled.div`
           background-size: contain;
           bottom: -39px;
           transform: rotate(90deg);
-          z-index: 1;
+          z-index: 0;
           background-repeat: no-repeat;
 
           ${media.greaterThan("large")`

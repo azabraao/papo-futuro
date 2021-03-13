@@ -61,7 +61,7 @@ export const SlideArrow = styled.div`
   right: ${props => (props.isLeft ? "auto" : "10px")};
   left: ${props => (props.isLeft ? "10px" : "auto")};
   top: 0;
-  z-index: 1;
+  z-index: 0;
   cursor: pointer;
 
   path {

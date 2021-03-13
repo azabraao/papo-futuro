@@ -18,6 +18,7 @@ export const DonateModalWrapper = styled.div`
   }
   /* Modal Content/Box */
   .modal-content {
+    max-width: 700px;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -39,7 +40,7 @@ export const DonateModalWrapper = styled.div`
     cursor: pointer;
   }
   .panel_3_button {
-    background-color: #003359;
+    background-color: var(--primary);
     width: fit-content;
     padding: 1rem 2rem;
     border-radius: 1.5rem;
@@ -59,5 +60,6 @@ export const DonateModalWrapper = styled.div`
     text-align: center;
     margin-top: 1rem;
     padding: 1rem 0.8rem;
+    min-width: 120px;
   }
 `

@@ -24,7 +24,7 @@ const DonateNowDesktop = () => {
   const donateNowImage = data.donateNowAndPersonPhoto.childImageSharp.fluid
 
   return (
-    <BackgroundImage Tag="div" fluid={donateNowImage}>
+    <BackgroundImage Tag="div" fluid={donateNowImage} style={{ zIndex: 1 }}>
       <Container>
         <div className="DonateNow__inside">
           <div className="DonateNow__column DonateNow__column-donate">
