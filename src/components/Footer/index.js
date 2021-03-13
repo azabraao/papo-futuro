@@ -1,7 +1,7 @@
 import React, { memo, useEffect, useState } from "react"
 import * as S from "./styled"
 import Container from "../Container"
-import { Facebook, Twitter, LinkedIn, Instagram, YouTube } from "./Icons"
+import { Facebook, LinkedIn, Instagram, YouTube } from "./Icons"
 import LogoMobile from "./LogoMobile"
 import LogoDesktop from "./LogoDesktop"
 
@@ -33,7 +33,7 @@ const Footer = () => {
               )}
               <div className="Footer__social">
                 <Facebook />
-                <Twitter />
+                {/* <Twitter /> */}
                 <LinkedIn />
                 <Instagram />
                 <YouTube />
@@ -78,9 +78,7 @@ const DesktopLinks = () => (
         apoiadores
       </a>
       <a className="Footer__link color-warning" href="#doe-agora">
-        <strong>
-          doe agora
-        </strong>
+        <strong>doe agora</strong>
       </a>
       <a className="Footer__link color-primary" href="#contato">
         contato

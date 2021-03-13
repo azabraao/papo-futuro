@@ -1,26 +1,26 @@
 import React, { memo, useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+// import { useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
 import DonateModal from "../DonateModal"
 
 const DonateNowDesktop = () => {
   const [showModal, setShowModal] = useState(false)
 
-  const data = useStaticQuery(
-    graphql`
-      query {
-        paypalLogo: file(relativePath: { eq: "paypal-logo.png" }) {
-          childImageSharp {
-            fixed(width: 40, height: 20) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `
-  )
+  // const data = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       paypalLogo: file(relativePath: { eq: "paypal-logo.png" }) {
+  //         childImageSharp {
+  //           fixed(width: 40, height: 20) {
+  //             ...GatsbyImageSharpFixed
+  //           }
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
 
-  const paypalLogo = data.paypalLogo.childImageSharp.fixed
+  // const paypalLogo = data.paypalLogo.childImageSharp.fixed
 
   const openModal = () => {
     setShowModal(true)
@@ -42,10 +42,10 @@ const DonateNowDesktop = () => {
       <a onClick={openModal} className="DonateNow__button DonateNow__button-2">
         quero financiar o projeto
       </a>
-      <a className="DonateNow__button DonateNow__button-3">
+      {/* <a className="DonateNow__button DonateNow__button-3">
         <Img fixed={paypalLogo} />
         doação internacional
-      </a>
+      </a> */}
       {showModal && <DonateModal hideModal={hideModal} />}
     </>
   )
