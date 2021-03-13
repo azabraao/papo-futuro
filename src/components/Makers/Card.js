@@ -13,8 +13,16 @@ const Card = ({ image, initialInfo, title, linkedinLink }) => {
       </div>
       <div className="Card__description">
         <p>
-          {initialInfo}
-          <a className="Card__description-link" href={linkedinLink} target="_blank" rel="noreferrer" rel="noopener noreferrer">
+          {initialInfo && (
+            <span className="Card__description-info">{initialInfo}</span>
+          )}
+          <a
+            className="Card__description-link"
+            href={linkedinLink}
+            target="_blank"
+            rel="noreferrer"
+            rel="noopener noreferrer"
+          >
             <LinkedinLogo />
           </a>
         </p>

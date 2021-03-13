@@ -21,6 +21,10 @@ export const CardWrapper = styled.div`
   .Card__img {
     margin-bottom: 8px;
 
+    img {
+      border-radius: 24px;
+    }
+
     ${media.greaterThan("large")`
       margin-bottom: 16px;
     `}
@@ -36,8 +40,9 @@ export const CardWrapper = styled.div`
   .Card__description {
     color: var(--danger);
 
-    .Card__description-link {
-      margin-left: 16px;
+    .Card__description-info {
+      display: inline-block;
+      margin-right: 16px;
     }
   }
 `
