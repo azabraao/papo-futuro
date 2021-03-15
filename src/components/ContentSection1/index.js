@@ -16,13 +16,13 @@ const ContentSection1 = () => {
         <div className="ContentSection1Wrapper__inner">
           <article>
             <h2 className="color-primary">
-              Porque acreditamos que só a{" "}
-              <span className="color-warning">educação</span> é capaz de
-              transformar a realidade das pessoas.
+              Por que acreditamos que só a
+              <span className="color-warning"> educação </span>é capaz de
+              transformar a realidade das pessoas?
             </h2>
             <p>
               <span className="color-dark">
-                Com a pandemia, as escolas foram fechadas e os alunos tiveram
+                Devido à pandemia, as escolas foram fechadas e os alunos tiveram
                 que se adaptar a uma nova realidade: o 
                 <strong>Ensino a Distância</strong>.
               </span>

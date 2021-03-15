@@ -39,8 +39,8 @@ const HowItWorks = () => {
               <div className="HowItWorks__step-number">2</div>
               <div className="HowItWorks__step-text">
                 <p>
-                  Selecionamos os alunos com maior engajamento com educação por
-                  meio de entrevistas e suas respostas no nosso formulário{" "}
+                  Selecionamos os alunos mais engajados na educação por meio de
+                  entrevistas e suas respostas no nosso formulário
                 </p>
               </div>
               {isDesktop && <Alvo />}
@@ -62,7 +62,7 @@ const HowItWorks = () => {
                 <p>
                   Auxiliamos os alunos com um processo de acompanhamento.
                   Atualmente todos os alunos que querem, conseguem uma bolsa de
-                  100% na plataforma Me Salva
+                  100% nas plataformas Me Salva e Redação Nota 1000
                 </p>
               </div>
               {isDesktop && <Computer />}

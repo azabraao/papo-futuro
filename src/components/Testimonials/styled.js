@@ -13,6 +13,22 @@ export const TestimonialsWrapper = styled.div`
   .slick-center {
     opacity: 1;
   }
+
+
+  header {
+    p {
+      margin-bottom: 8px;
+      text-align: center;
+      color: var(--dark);
+
+
+      ${media.greaterThan("large")`
+        font-size: 18px;
+        line-height: 1.1;
+        margin-bottom: 24px;
+      `}
+    }
+  }
 `
 
 export const CardWrapper = styled.div`

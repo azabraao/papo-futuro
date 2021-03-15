@@ -66,8 +66,7 @@ const Supporters = () => {
               apoiadores
             </Title>
             <p>
-              Confira as empresas e pessoas que já estão conectadas com a nossa
-              causa:
+              Confira pessoas e empresas já conectadas com a nossa causa:
             </p>
           </header>
 

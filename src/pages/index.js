@@ -16,9 +16,9 @@ const ManifestSection = React.lazy(() =>
 const PublicSchoolSection = React.lazy(() =>
   import("../components/PublicSchoolSection")
 )
-const SponsorshipSystem = React.lazy(() =>
-  import("../components/SponsorshipSystem")
-)
+// const SponsorshipSystem = React.lazy(() =>
+//   import("../components/SponsorshipSystem")
+// )
 const Testimonials = React.lazy(() => import("../components/Testimonials"))
 const HelpedStudents = React.lazy(() => import("../components/HelpedStudents"))
 const Achievements = React.lazy(() => import("../components/Achievements"))
@@ -47,7 +47,7 @@ export default function Home() {
           <HowMuchCosts />
           <DonateNow />
           <StudentCost />
-          <SponsorshipSystem />
+          {/* <SponsorshipSystem /> */}
           <HowItWorks />
           <Testimonials />
           <HelpedStudents />

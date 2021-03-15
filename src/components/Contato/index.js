@@ -51,7 +51,7 @@ const Contato = () => {
               <WhatsappIcon />
               <p>Comece um chat</p>
             </a>
-            <a href="#" className="Contato__link">
+            <a href="mailto:contato.papofuturo@gmail.com" className="Contato__link">
               <Email />
               <p>envie um e-mail</p>
             </a>

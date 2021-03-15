@@ -75,7 +75,7 @@ const HowMuchCosts = () => {
             <p className="color-dark">Tablet Wi-Fi </p>
             <div className="color-primary">
               <small>R$</small>
-              268,00
+              390,00
             </div>
           </div>
           <div className="HowMuchCosts__square HowMuchCosts__square-4">
@@ -100,10 +100,10 @@ const HowMuchCosts = () => {
               />
             </svg>
 
-            <p className="color-dark">Tablet Wi-Fi </p>
+            <p className="color-dark">Tablet 3G </p>
             <div className="color-primary">
               <small>R$</small>
-              268,00
+              315,00
             </div>
           </div>
         </div>

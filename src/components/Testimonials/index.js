@@ -15,13 +15,18 @@ const Testimonials = () => {
   return (
     <Section id="depoimentos">
       <TestimonialsWrapper>
-        <Title
-          titleColor="warning"
-          centeredOnMobile={true}
-          lineColor="warning-dark"
-        >
-          depoimentos
-        </Title>
+        <header>
+          <Title
+            titleColor="warning"
+            centeredOnMobile={true}
+            lineColor="warning-dark"
+          >
+            depoimentos
+          </Title>
+          <p>
+          Confira o que os alunos apoiados pelo Papo Futuro têm a dizer
+          </p>
+        </header>
         {isDesktop ? (
           <Container>
             <Slide />

@@ -160,7 +160,7 @@ const Makers = () => {
             }
           }
         }
-        juliana: file(relativePath: { eq: "team/juliana.jpeg" }) {
+        juliana: file(relativePath: { eq: "team/juliana.jpg" }) {
           childImageSharp {
             fixed(width: 120, height: 120, quality: 70) {
               ...GatsbyImageSharpFixed

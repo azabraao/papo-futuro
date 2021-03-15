@@ -67,13 +67,19 @@ const Achievements = () => {
     <Section id="conquistas">
       <Container>
         <AchievementsWrapper>
-          <Title
-            lineColor="primary-lighter"
-            titleColor="primary"
-            centeredOnMobile={true}
-          >
-            nossas conquistas
-          </Title>
+          <header>
+            <Title
+              lineColor="primary-lighter"
+              titleColor="primary"
+              centeredOnMobile={true}
+            >
+              nossas conquistas
+            </Title>
+            <p>
+              Confira quanto o Papo Futuro já conseguiu arrecadar e quantos
+              foram os alunos que já estão sendo apoiados por esta causa.
+            </p>
+          </header>
           <div className="Achievements__inner Achievements__columns">
             <div className="Achievements__column">
               {isDesktop && <DesktopImage />}

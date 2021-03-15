@@ -7,23 +7,28 @@ const PublicSchoolSection = () => {
     <S.PublicSchoolSectionWrapper>
       <Container>
         <h2 className="color-primary">
-          na rede pública do Brasil,
+          Na Rede Pública de Ensino do Brasil,
           <span className="color-warning"> 39% dos alunos </span>
-          não tem um computador ou tablet em casa.
+          não têm um computador ou qualquer outro dispositivo móvel para estudo
+          em casa.
         </h2>
         <article>
           <p className="color-dark">
-            O <strong>Projeto Papo Futuro</strong> ajuda alunos das comunidades
-            a não desistirem dos seus sonhos, oferecendo acesso à internet e{" "}
-            <strong>fornecendo dispositivos eletrônicos</strong> para que voltem
-            a estudar.
+            O <strong>Papo Futuro</strong> auxilia alunos de diferentes
+            comunidades a não desistirem de seus sonhos,{" "}
+            <strong>
+              {" "}
+              oferecendo-lhes acesso à internet e também dispositivos
+              eletrônicos{" "}
+            </strong>{" "}
+            para que possam continuar ou voltar a estudar.
           </p>
           <p className="color-dark">
-            Para fazer o projeto acontecer e permitir que o maior número de
-            alunos retomam aos estudos,{" "}
-            <strong>
-              precisamos de doações em dinheiro ou em equipamentos como laptops,
-              tablets e smartphones.
+            Para fazer o projeto acontecer apoiar ao maior maior número alunos
+            para continuarem, ou retomarem, seus estudos,
+            <strong> {" "}
+              precisamos de doações financeiras ou em forma de equipamentos como
+              laptops e tablets.
             </strong>
           </p>
         </article>
@@ -35,7 +40,8 @@ const PublicSchoolSection = () => {
           </div>
           <div className="PublicSchoolSection__button-1-wrap">
             <a
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfX5-FSJ9_CFsbpbl30NP1kloaD8ehwMGvVuHq_LvG5W6AsGA/viewform?usp=send_form"
               className="PublicSchoolSection__button-2"
             >

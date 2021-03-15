@@ -4,6 +4,23 @@ import media from "styled-media-query"
 export const AchievementsWrapper = styled.div`
   background-color: ${props => (props.background ? props.background : "")};
 
+  header {
+    max-width: 700px;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 8px;
+      text-align: center;
+      color: var(--dark);
+
+      ${media.greaterThan("large")`
+        font-size: 18px;
+        line-height: 1.1;
+        margin-bottom: 24px;
+      `}
+    }
+  }
+
   .Achievements__inner {
     &.Achievements__columns {
       ${media.greaterThan("large")`
@@ -33,7 +50,7 @@ export const AchievementsWrapper = styled.div`
       justify-content: space-between;
       align-items: center;
 
-        ${media.greaterThan("large")`
+      ${media.greaterThan("large")`
           padding-top: 90px;
         `};
 
@@ -44,7 +61,8 @@ export const AchievementsWrapper = styled.div`
         flex-direction: column;
         background: #fbfbfb;
         border-radius: 16px;
-        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+          rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 
         ${media.greaterThan("large")`
           width: 40%;
