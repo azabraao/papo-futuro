@@ -24,7 +24,7 @@ const HelpedStudents = React.lazy(() => import("../components/HelpedStudents"))
 const Achievements = React.lazy(() => import("../components/Achievements"))
 const PapoNaMidia = React.lazy(() => import("../components/PapoNaMidia"))
 const Supporters = React.lazy(() => import("../components/Supporters"))
-const Makers = React.lazy(() => import("../components/Makers"))
+const Team = React.lazy(() => import("../components/Team"))
 const Contato = React.lazy(() => import("../components/Contato"))
 const Footer = React.lazy(() => import("../components/Footer"))
 const Fonts = React.lazy(() => import("../components/Fonts"))
@@ -54,7 +54,7 @@ export default function Home() {
           <Achievements />
           <PapoNaMidia />
           <Supporters />
-          <Makers />
+          <Team />
           <Contato />
           <Footer />
           <Fonts />

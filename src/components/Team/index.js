@@ -7,7 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Card from "./Card"
 import Slide from "../Slide"
 
-const Makers = () => {
+const Team = () => {
   const [isDesktop, setIsDesktop] = useState(false)
 
   useEffect(() => {
@@ -369,4 +369,4 @@ const Makers = () => {
   )
 }
 
-export default memo(Makers)
+export default memo(Team)
