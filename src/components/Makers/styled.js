@@ -6,11 +6,7 @@ export const MakersWrapper = styled.div`
   max-width: 900px;
 
   .Makers__list {
-    ${media.greaterThan("large")`
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    `}
+
   }
 `
 
@@ -27,6 +23,11 @@ export const CardWrapper = styled.div`
 
     ${media.greaterThan("large")`
       margin-bottom: 16px;
+
+      .gatsby-image-wrapper {
+        width: 200px !important;
+        height: 200px !important;
+      } 
     `}
   }
   .Card__title {
@@ -44,21 +45,5 @@ export const CardWrapper = styled.div`
       display: inline-block;
       margin-right: 16px;
     }
-  }
-`
-
-export const SlideArrow = styled.div`
-  display: flex;
-  height: 100%;
-  position: absolute;
-  align-items: center;
-  right: ${props => (props.isLeft ? "auto" : "10px")};
-  left: ${props => (props.isLeft ? "10px" : "auto")};
-  top: 0;
-  z-index: 0;
-  cursor: pointer;
-
-  path {
-    fill: ${props => (props.active ? "var(--danger)" : "var(--dark)")};
   }
 `

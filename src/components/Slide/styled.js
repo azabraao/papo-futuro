@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const SlideArrow = styled.div`
   display: flex;
@@ -10,6 +11,11 @@ export const SlideArrow = styled.div`
   top: 0;
   z-index: 0;
   cursor: pointer;
+
+  ${media.greaterThan("large")`
+    right: ${props => (props.isLeft ? "auto" : "-40px")};
+    left: ${props => (props.isLeft ? "-40px" : "auto")};
+  `}
 
   path {
     fill: ${props => (props.active ? "var(--danger)" : "var(--dark)")};

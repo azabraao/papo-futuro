@@ -340,7 +340,7 @@ const Makers = () => {
   ]
 
   return (
-    <Section id="equipe" noPaddingBottom={true} background="gray-lighter">
+    <Section id="equipe" noPaddingBottom={true} isDesktop={isDesktop} background="gray-lighter">
       <Container>
         <MakersWrapper>
           <Title
@@ -351,8 +351,8 @@ const Makers = () => {
             quem faz acontecer
           </Title>
           <div className="Makers__list">
-            {isDesktop ? (
-              profiles.map(({ image, title, link, info }, index) => (
+            <Slide slideCentered={false}>
+              {profiles.map(({ image, title, link, info }, index) => (
                 <Card
                   key={index}
                   image={image}
@@ -360,20 +360,8 @@ const Makers = () => {
                   linkedinLink={link}
                   initialInfo={info}
                 />
-              ))
-            ) : (
-              <Slide slideCentered={false}>
-                {profiles.map(({ image, title, link, info }, index) => (
-                  <Card
-                    key={index}
-                    image={image}
-                    title={title}
-                    linkedinLink={link}
-                    initialInfo={info}
-                  />
-                ))}
-              </Slide>
-            )}
+              ))}
+            </Slide>
           </div>
         </MakersWrapper>
       </Container>

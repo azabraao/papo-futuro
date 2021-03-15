@@ -47,7 +47,7 @@ const PrevArrow = ({ onClick, onArrowClick, slideDirection }) => {
       active={slideDirection === "left"}
       onClick={e => {
         onArrowClick("left")
-        onClick(e)
+        onClick && onClick(e)
       }}
     >
       <svg
@@ -70,7 +70,7 @@ const NextArrow = ({ onClick, onArrowClick, slideDirection }) => {
       isLeft={false}
       onClick={e => {
         onArrowClick("right")
-        onClick(e)
+        onClick && onClick(e)
       }}
       active={slideDirection === "right"}
     >
