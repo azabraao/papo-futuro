@@ -114,7 +114,7 @@ const Team = () => {
             }
           }
         }
-        sophiaHess: file(relativePath: { eq: "team/sophia-hess.jpeg" }) {
+        sophiaHess: file(relativePath: { eq: "team/sophia-hess.jpg" }) {
           childImageSharp {
             fixed(width: 120, height: 120, quality: 70) {
               ...GatsbyImageSharpFixed

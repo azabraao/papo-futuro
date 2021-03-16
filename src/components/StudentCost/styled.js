@@ -98,7 +98,7 @@ export const StudentCostWrapper = styled.div`
           margin-left: 28px;
 
           p {
-            font-size: 52px;
+            font-size: 43px;
           }
           small {
             font-size: 33px;

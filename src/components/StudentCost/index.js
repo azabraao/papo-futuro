@@ -33,23 +33,23 @@ const StudentCost = () => {
         <div className="StudentCost__content-box StudentCost__content-box-1">
           <article className="color-primary">
             <p>
-              Doando <span className="color-warning">R$123,00</span> você ajuda
+              Doando <span className="color-warning">R$200,00</span> você ajuda
             </p>
           </article>
           <div>
-            <p>123</p>
-            <small>alunos</small>
+            <p>4 alunos</p>
+            <small>por 1 mês</small>
           </div>
         </div>
         <div className="StudentCost__content-box StudentCost__content-box-2">
           <article className="color-warning">
             <p>
-              Doando <span className="color-primary">R$321,00</span> você ajuda
+              Doando <span className="color-primary">R$1000,00</span> você ajuda
             </p>
           </article>
           <div>
-            <p>123</p>
-            <small>alunos</small>
+            <p>20 alunos</p>
+            <small>por 1 mês</small>
           </div>
         </div>
       </div>

@@ -24,6 +24,10 @@ export const HowItWorksWrapper = styled.div`
       }
 
       ${media.greaterThan("large")`
+        &:first-child {
+          padding-top: 40px;
+        }
+
         display: flex;
         flex-direction: column;
         justify-content: center;

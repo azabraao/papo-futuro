@@ -31,12 +31,12 @@ const HelpedStudents = ({}) => {
         <Container>
           <div className="HelpedStudents__inside">
             <p>
-              mais de <span className="color-primary-lighter">90 alunos</span>{" "}
-              ajudados.
+              mais de <span className="color-primary-lighter"> 200 </span>{" "}
+              alunos apoiados.
             </p>
             <p>
               mais de{" "}
-              <span className="color-primary-lighter">R$ 40.326,69</span>{" "}
+              <span className="color-primary-lighter">R$ 80.000,00</span>{" "}
               arrecadados.
             </p>
           </div>
