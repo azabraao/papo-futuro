@@ -351,7 +351,7 @@ const Team = () => {
             quem faz acontecer
           </Title>
           <div className="Makers__list">
-            <Slide slideCentered={false}>
+            <Slide slideCentered={false} infinite={true}>
               {profiles.map(({ image, title, link, info }, index) => (
                 <Card
                   key={index}

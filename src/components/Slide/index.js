@@ -4,7 +4,7 @@ import { SlideArrow } from "./styled"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-const Slide = ({ children, slideCentered = true }) => {
+const Slide = ({ children, slideCentered = true, infinite = false }) => {
   const [slideDirection, setSlideDirection] = useState("")
 
   const onArrowClick = direction => setSlideDirection(direction)
@@ -12,7 +12,7 @@ const Slide = ({ children, slideCentered = true }) => {
   const settings = {
     className: "center",
     dots: false,
-    infinite: false,
+    infinite,
     lazyLoad: true,
     centerMode: slideCentered,
     speed: 500,
