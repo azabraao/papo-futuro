@@ -3,7 +3,7 @@ import media from "styled-media-query"
 
 export const SupportersWrapper = styled.div`
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1100px;
 
   header {
     p {
