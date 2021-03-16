@@ -44,6 +44,20 @@ const Supporters = () => {
             }
           }
         }
+        logoBase: file(relativePath: { eq: "logo-base.png" }) {
+          childImageSharp {
+            fixed(width: 100, height: 50, quality: 80) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        red1000: file(relativePath: { eq: "red-1000.png" }) {
+          childImageSharp {
+            fixed(width: 100, height: 100, quality: 80) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `
   )
@@ -52,6 +66,8 @@ const Supporters = () => {
   const fluke = data.fluke.childImageSharp.fixed
   const meSalva = data.meSalva.childImageSharp.fixed
   const beesOfLove = data.beesOfLove.childImageSharp.fixed
+  const logoBase = data.logoBase.childImageSharp.fixed
+  const red1000 = data.red1000.childImageSharp.fixed
 
   return (
     <Section id="apoiadores" background="gray-lighter" noPaddingBottom={true}>
@@ -65,9 +81,7 @@ const Supporters = () => {
             >
               apoiadores
             </Title>
-            <p>
-              Confira pessoas e empresas já conectadas com a nossa causa:
-            </p>
+            <p>Confira pessoas e empresas já conectadas com a nossa causa:</p>
           </header>
 
           <div className="Supporters__logo">
@@ -77,6 +91,8 @@ const Supporters = () => {
                 <Img className="Supporters__logo-img" fixed={fluke} />
                 <Img className="Supporters__logo-img" fixed={meSalva} />
                 <Img className="Supporters__logo-img" fixed={beesOfLove} />
+                <Img className="Supporters__logo-img" fixed={logoBase} />
+                <Img className="Supporters__logo-img" fixed={red1000} />
               </>
             ) : (
               <>
@@ -87,6 +103,10 @@ const Supporters = () => {
                 <div className="Supporters__logo-row">
                   <Img className="Supporters__logo-img" fixed={meSalva} />
                   <Img className="Supporters__logo-img" fixed={beesOfLove} />
+                </div>
+                <div className="Supporters__logo-row">
+                  <Img className="Supporters__logo-img" fixed={logoBase} />
+                  <Img className="Supporters__logo-img" fixed={red1000} />
                 </div>
               </>
             )}
