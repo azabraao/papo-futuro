@@ -27,6 +27,13 @@ const Slide = () => {
             }
           }
         }
+        napandemia: file(relativePath: { eq: "na-pandemia-projetos-sociais.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 400, quality: 70) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   )
@@ -35,6 +42,7 @@ const Slide = () => {
 
   const apagao = data.apagao.childImageSharp.fluid
   const gerazaoz = data.gerazaoz.childImageSharp.fluid
+  const napandemia = data.napandemia.childImageSharp.fluid
 
   const settings = {
     className: "center",
@@ -44,7 +52,7 @@ const Slide = () => {
     centerMode: true,
     speed: 500,
     swipeToSlide: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     afterChange: current => setCurrentSlide(current),
@@ -77,7 +85,7 @@ const Slide = () => {
       <Card
         image={apagao}
         preTitle="19 de agosto de 2020 - Estadão"
-        title="apagão educacional e inclusão digital: ação solidária contra 
+        title="Apagão educacional e inclusão digital: ação solidária contra 
         a desigualdade"
         description="As fragilidades que persistem nas iniciativas de universalização das políticas públicas e no Brasil criam uma maior dificuldade no enfrentamento da pandemia. O caso da Educação, determinante para o desenvolvimento de nosso país, não é diferente. (…)"
         link="https://politica.estadao.com.br/blogs/gestao-politica-e-sociedade/apagao-educacional-e-inclusao-digital-acao-solidaria-contra-a-desigualdade/"
@@ -85,9 +93,16 @@ const Slide = () => {
       <Card
         image={gerazaoz}
         preTitle="07 de agosto de 2020 - Glamurama"
-        title="geração z: Desculpa professor, a internet caiu aqui! As dificuldades do ensino à distância"
+        title="Geração Z: Desculpa professor, a internet caiu aqui! As dificuldades do ensino à distância"
         description="Depois de um mês de férias viajando do meu quarto para a cozinha, do banheiro para a sala, e do escritório até a lavanderia, minhas aulas voltaram. Não vou poder mais tomar sol de manhã, jogar videogame a tarde, passar horas no celular à noite e dormir às 4 da manhã depois de ver três filmes de madrugada.(…)"
         link="https://glamurama.uol.com.br/geracao-z-desculpa-professor-a-internet-caiu-aqui-as-dificuldades-do-ensino-a-distancia/"
+      />
+      <Card
+        image={napandemia}
+        preTitle="23 de março de 2021 - G1"
+        title="Na pandemia, projetos sociais levam material escolar, cestas básicas e computadores para alunos"
+        description="Em São Paulo, por exemplo, ONG distribui computadores e chips de internet para estudantes de escola pública. Conheça outras iniciativas pelo país. (...)"
+        link="https://g1.globo.com/educacao/noticia/2021/03/23/na-pandemia-projetos-sociais-levam-material-escolar-cestas-basicas-e-computadores-para-alunos.ghtml"
       />
     </Slider>
   )
@@ -120,7 +135,7 @@ const PrevArrow = ({ onClick, onArrowClick, slideDirection, currentSlide }) => {
 }
 
 const NextArrow = ({ onClick, onArrowClick, slideDirection, currentSlide }) => {
-  if (currentSlide > 0) return null
+  if (currentSlide >= 2) return null
 
   return (
     <SlideArrow

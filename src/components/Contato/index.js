@@ -73,10 +73,10 @@ const Contato = () => {
             </a>
             <a
               target="_blank" rel="noreferrer"
-              href="https://docs.google.com/forms/d/1S5UoGoReGxUbH6qpH6CesPSjqoPWOpp80NW6T3A5XyI/closedform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeX8DAhtAkQTY4S691YXYxvhP8tkW77fKEGEKpWxDs59d12zw/viewform"
               className="Contato__link sou-aluno"
             >
-              <p>Sou aluno ou conheço um aluno que precisa de ajuda</p>
+              <p>SOU UM ALUNO QUE PRECISA DE AJUDA</p>
             </a>
           </div>
         </Container>

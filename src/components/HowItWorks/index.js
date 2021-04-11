@@ -49,9 +49,9 @@ const HowItWorks = () => {
               <div className="HowItWorks__step-number">3</div>
               <div className="HowItWorks__step-text">
                 <p>
-                  Doamos dispositivos eletrônicos e chips de 4G de 20 GB
-                  possibilitando com que os alunos assistam pelo menos três
-                  horas de vídeo aulas por dia{" "}
+                  Doamos dispositivos eletrônicos e chips 4G com 20GB por mês,
+                  possibilitando os alunos a assistirem ao menos três horas de
+                  videoaulas por dia.
                 </p>
               </div>
               {isDesktop && <Phone />}
@@ -61,8 +61,8 @@ const HowItWorks = () => {
               <div className="HowItWorks__step-text">
                 <p>
                   Auxiliamos os alunos com um processo de acompanhamento.
-                  Atualmente todos os alunos que querem, conseguem uma bolsa de
-                  100% nas plataformas Me Salva e Redação Nota 1000
+                  Atualmente, todos os alunos que querem, podem obter uma bolsa
+                  de 100% nas plataformas Me Salva e Redação Nota 1000.
                 </p>
               </div>
               {isDesktop && <Computer />}

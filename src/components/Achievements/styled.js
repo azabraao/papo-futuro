@@ -77,6 +77,7 @@ export const AchievementsWrapper = styled.div`
 
         .ant-progress-text {
           color: #f2f2f2;
+          font-size: 0px;
 
           &::before {
             content: "";

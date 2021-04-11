@@ -24,9 +24,10 @@ const PublicSchoolSection = () => {
             para que possam continuar ou voltar a estudar.
           </p>
           <p className="color-dark">
-            Para fazer o projeto acontecer apoiar ao maior maior número alunos
-            para continuarem, ou retomarem, seus estudos,
-            <strong> {" "}
+            Para fazer o projeto acontecer e apoiar o maior número de alunos a
+            continuarem estudando ou a retomarem seus estudos
+            <strong>
+              {" "}
               precisamos de doações financeiras ou em forma de equipamentos como
               laptops e tablets.
             </strong>

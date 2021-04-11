@@ -8,7 +8,7 @@ const StudentCost = () => {
     graphql`
       query {
         custoMedioAlunoImg: file(
-          relativePath: { eq: "custo-medio-aluno.png" }
+          relativePath: { eq: "custo-medio-do-aluno-2.png" }
         ) {
           childImageSharp {
             fluid(maxWidth: 400, quality: 80) {

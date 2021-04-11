@@ -31,7 +31,7 @@ const HelpedStudents = ({}) => {
         <Container>
           <div className="HelpedStudents__inside">
             <p>
-              mais de <span className="color-primary-lighter"> 200 </span>{" "}
+              mais de <span className="color-primary-lighter"> 250 </span>{" "}
               alunos apoiados.
             </p>
             <p>
