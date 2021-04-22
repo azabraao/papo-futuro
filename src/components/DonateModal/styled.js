@@ -60,6 +60,6 @@ export const DonateModalWrapper = styled.div`
     text-align: center;
     margin-top: 1rem;
     padding: 1rem 0.8rem;
-    min-width: 120px;
+    min-width: 110px;
   }
 `
