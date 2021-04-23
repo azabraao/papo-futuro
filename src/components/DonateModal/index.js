@@ -11,118 +11,100 @@ const DonateModal = ({ hideModal }) => {
 
         <div className="donate_buttons">
           <a
-            href="https://link.pagar.me/lr1G1QdRAXu"
+            href="https://link.pagar.me/lH1Vo9Yvevd"
             className="panel_3_button donate_button"
           >
             R$20,00
           </a>
           <a
-            href="https://link.pagar.me/lrJRfd0AQd"
+            href="https://link.pagar.me/lBkoqKvewd"
             className="panel_3_button donate_button"
           >
             R$40,00
           </a>
-          {/* <a
-            href="https://link.pagar.me/lBkxHIpp7Jd"
-            className="panel_3_button donate_button"
-          >
-            R$50,00
-          </a> */}
           <a
-            href="https://link.pagar.me/lByK0GOCRQO"
+            href="https://link.pagar.me/lBJxs9tPxwO"
             className="panel_3_button donate_button"
           >
             R$60,00
           </a>
           <a
-            href="https://link.pagar.me/lrkCfd00mu"
+            href="https://link.pagar.me/lrJicFDgvd"
             className="panel_3_button donate_button"
           >
             R$80,00
           </a>
-          {/* <a
-            href="https://link.pagar.me/lHkbB86pmkO"
-            className="panel_3_button donate_button"
-          >
-            R$90,00
-          </a> */}
           <a
-            href="https://link.pagar.me/lSygCzdCCQu"
+            href="https://link.pagar.me/lByi5FvgDd"
             className="panel_3_button donate_button"
           >
             R$100,00
           </a>
           <a
-            href="https://link.pagar.me/lrkSRMOA0Qu"
+            href="https://link.pagar.me/lHkfoqYDgwO"
             className="panel_3_button donate_button"
           >
             R$160,00
           </a>
           <a
-            href="https://link.pagar.me/lBJeSLaa7ku"
+            href="https://link.pagar.me/lSyi9tDlPO"
             className="panel_3_button donate_button"
           >
             R$180,00
           </a>
           <a
-            href="https://link.pagar.me/lB1RGu0CQu"
+            href="https://link.pagar.me/lHJxo5twxwd"
             className="panel_3_button donate_button"
           >
             R$200,00
           </a>
-          {/* <a
-            href="https://link.pagar.me/lB1eBUaamyu"
-            className="panel_3_button donate_button"
-          >
-            R$270,00
-          </a> */}
           <a
-            href="https://link.pagar.me/lr1lAfdCRmO"
+            href="https://link.pagar.me/lS1j9FDlvu"
             className="panel_3_button donate_button"
           >
             R$400,00
           </a>
           <a
-            href="https://link.pagar.me/lrkrLpaQyu"
+            href="https://link.pagar.me/lH1icKwevO"
             className="panel_3_button donate_button"
           >
             R$500,00
           </a>
           <a
-            href="https://link.pagar.me/lryCzdCRmd"
+            href="https://link.pagar.me/lB1jqtDgDO"
             className="panel_3_button donate_button"
           >
             R$800,00
           </a>
           <a
-            href="https://link.pagar.me/lH1BL6pX1O"
+            href="https://link.pagar.me/lr1loctPxPu"
             className="panel_3_button donate_button"
           >
-            R$1.000,00
+            R$1000,00
           </a>
           <a
-            href="https://link.pagar.me/lr1xCGOCAQu"
+            href="https://link.pagar.me/lryls5KPlvu"
             className="panel_3_button donate_button"
           >
             R$1600,00
           </a>
           <a
-            href="https://link.pagar.me/lSkRGOAAQu"
+            href="https://link.pagar.me/lBJlocFwgPd"
             className="panel_3_button donate_button"
           >
             R$2000,00
           </a>
           <a
-            href="https://link.pagar.me/lr10zdAR7u"
+            href="https://link.pagar.me/lB1xs9FDgDO"
             className="panel_3_button donate_button"
           >
             R$3200,00
           </a>
           <a
-            href="https://link.pagar.me/lBJBUa6XyO"
+            href="https://link.pagar.me/lS1ocYDgwO"
             className="panel_3_button donate_button"
           >
-            R$5.000,00
+            R$5000,00
           </a>
         </div>
       </div>
