@@ -22,12 +22,12 @@ const DonateModal = ({ hideModal }) => {
           >
             R$40,00
           </a>
-          <a
+          {/* <a
             href="https://link.pagar.me/lBkxHIpp7Jd"
             className="panel_3_button donate_button"
           >
             R$50,00
-          </a>
+          </a> */}
           <a
             href="https://link.pagar.me/lByK0GOCRQO"
             className="panel_3_button donate_button"
@@ -40,12 +40,12 @@ const DonateModal = ({ hideModal }) => {
           >
             R$80,00
           </a>
-          <a
+          {/* <a
             href="https://link.pagar.me/lHkbB86pmkO"
             className="panel_3_button donate_button"
           >
             R$90,00
-          </a>
+          </a> */}
           <a
             href="https://link.pagar.me/lSygCzdCCQu"
             className="panel_3_button donate_button"
@@ -70,12 +70,12 @@ const DonateModal = ({ hideModal }) => {
           >
             R$200,00
           </a>
-          <a
+          {/* <a
             href="https://link.pagar.me/lB1eBUaamyu"
             className="panel_3_button donate_button"
           >
             R$270,00
-          </a>
+          </a> */}
           <a
             href="https://link.pagar.me/lr1lAfdCRmO"
             className="panel_3_button donate_button"
